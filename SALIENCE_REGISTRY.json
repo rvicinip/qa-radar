@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": "international-standards",
+      "user_request": "International norms for AI-assisted code generation and QA governance (ISO, NIST, EU AI Act, OWASP, IEEE, WCAG, OECD)",
+      "surfaces": [
+        "nav:Standards",
+        "home:standards-strip",
+        "page:/standards",
+        "footer:standards-count"
+      ],
+      "data_files": ["standards.json"],
+      "min_count": 12,
+      "added": "2026-06-09"
+    },
+    {
+      "id": "rich-content",
+      "user_request": "More trends, articles, and signals so QA Radar feels alive and useful, not empty",
+      "surfaces": ["home", "page:/trends", "page:/news", "page:/signal-board"],
+      "data_files": ["trends.json", "news.json", "signals.json"],
+      "min_count": {
+        "trends": 15,
+        "news": 12,
+        "signals": 8
+      },
+      "added": "2026-06-09"
+    },
+    {
+      "id": "user-salience-rule",
+      "user_request": "Everything I ask for must show up in the UI and stay visible on every content update",
+      "surfaces": ["home:your-priorities", "page:/salience"],
+      "data_files": ["SALIENCE_REGISTRY.json"],
+      "min_count": 2,
+      "added": "2026-06-09"
+    },
+    {
+      "id": "monthly-editions",
+      "user_request": "QA Radar must be a consultable monthly newspaper — a new dated edition each month with navigation between versions",
+      "surfaces": ["nav:Editions", "page:/editions", "page:/evolution"],
+      "data_files": ["editions.json"],
+      "min_count": 1,
+      "added": "2026-07-11"
+    }
+  ]
+}
