@@ -1,0 +1,87 @@
+[
+  {
+    "id": "change-2026-06-09-initial-package",
+    "date": "2026-06-09",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "created",
+    "item_id": "qa-radar-phase-1",
+    "summary": "Created initial execution package for QA Radar Phase 1 MVP.",
+    "reason": "Prepare project for handoff to another model or coding agent.",
+    "source_ids": [
+      "source-playwright",
+      "source-ministry-of-testing"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-06-09-seed-enrichment",
+    "date": "2026-06-09",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "updated",
+    "item_id": "qa-radar-seed-data",
+    "summary": "Enriched Phase 1 seed data across trends, news, signals, tools, practices, communities, events and learning paths.",
+    "reason": "Make QA Radar feel alive and useful with curated static content.",
+    "source_ids": [
+      "source-playwright",
+      "source-ministry-of-testing",
+      "source-dora"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-06-09-standards-seed",
+    "date": "2026-06-09",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "updated",
+    "item_id": "qa-radar-standards-coverage",
+    "summary": "Added international AI/QA standards coverage: 14 best practices, 4 trends, 4 signals, 5 news items and 15 sources.",
+    "reason": "User request for ISO, IEEE, NIST, EU, OWASP and OECD governance references in QA Radar seed data.",
+    "source_ids": [
+      "source-iso-42001",
+      "source-nist-ai-rmf",
+      "source-eu-ai-act",
+      "source-owasp-llm-top10"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-06-09-standards-core-pillar",
+    "date": "2026-06-09",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "created",
+    "item_id": "qa-radar-standards-salience",
+    "summary": "Established international standards as a core pillar: dedicated standards.json (15 frameworks), /standards route, permanent nav, home StandardsPreview strip, footer coverage line and validate:salient enforcement.",
+    "reason": "User requirement: standards must stay salient on every content update, not buried as one-time seed.",
+    "source_ids": [
+      "source-iso-42001",
+      "source-nist-ai-rmf",
+      "source-eu-ai-act",
+      "source-owasp-llm-top10",
+      "source-wcag-22"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-06-09-format-lock",
+    "date": "2026-06-09",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "created",
+    "item_id": "format-lock",
+    "tags": ["format-lock"],
+    "summary": "Format lock: extracted design-tokens.css from screen mock, FORMAT_REGISTRY.json, validate:format script, release chain enforcement.",
+    "reason": "User rule: visual format must not drift between enrich runs, seed updates, or deploys.",
+    "source_ids": ["source-ministry-of-testing"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-07-01-july-edition",
+    "date": "2026-07-01",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "created",
+    "item_id": "qa-radar-edition-2026-07",
+    "summary": "Opened the July 2026 edition (cloned June) and curated trends, news and tools for the month.",
+    "reason": "Monthly QA Radar newspaper: a fresh dated edition with navigable evolution vs. June.",
+    "source_ids": ["source-playwright", "source-ministry-of-testing"],
+    "review_status": "reviewed"
+  }
+]

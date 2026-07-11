@@ -1,0 +1,35 @@
+[
+  {
+    "id": "eco-2026-07-01",
+    "title": "Pilot Playwright trace-on-retry across tenant smoke suites",
+    "rationale": "The Playwright 1.53 trace-on-retry improvement makes flaky-run debugging cheaper; piloting it strengthens our smoke-test evidence.",
+    "verdict": "trial",
+    "target": "iq-qa",
+    "source_ref": "playwright-1-53-release",
+    "status": "proposed",
+    "created_at": "2026-07-01",
+    "updated_at": "2026-07-01"
+  },
+  {
+    "id": "eco-2026-07-02",
+    "title": "Add a human-review gate for AI-assisted test generation",
+    "rationale": "AI-assisted testing matured this month; a review gate protects against weak assertions and false confidence in our QA pipeline.",
+    "verdict": "adopt",
+    "target": "ai-ops",
+    "source_ref": "ai-assisted-testing",
+    "status": "proposed",
+    "created_at": "2026-07-01",
+    "updated_at": "2026-07-01"
+  },
+  {
+    "id": "eco-2026-07-03",
+    "title": "Evaluate Trace Viewer in the ticket evidence workflow",
+    "rationale": "Interactive traces could improve the evidence we attach to FHS tickets; worth a small evaluation before adopting broadly.",
+    "verdict": "watch",
+    "target": "iq-qa",
+    "source_ref": "trace-viewer-plus",
+    "status": "proposed",
+    "created_at": "2026-07-01",
+    "updated_at": "2026-07-01"
+  }
+]
