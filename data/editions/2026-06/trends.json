@@ -1,0 +1,892 @@
+[
+  {
+    "id": "ai-assisted-testing",
+    "title": "AI-assisted testing",
+    "summary": "AI can accelerate test design, review and automation, but it requires validation, human review and evidence-based governance.",
+    "tags": [
+      "ai",
+      "automation",
+      "governance"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/mutation-testing",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-thoughtworks-mutation-testing"
+    ],
+    "name": "AI-assisted testing",
+    "state": "Growing",
+    "impact": "Critical",
+    "applicability": [
+      "Automation",
+      "SDET",
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "False confidence",
+      "Weak assertions",
+      "Duplicated test cases"
+    ],
+    "recommended_practices": [
+      "Human review gate",
+      "Mutation testing",
+      "Evidence packs"
+    ]
+  },
+  {
+    "id": "playwright-modern-e2e",
+    "title": "Playwright and modern E2E testing",
+    "summary": "Playwright is a strong modern E2E option for browser automation, trace-based debugging and CI regression.",
+    "tags": [
+      "playwright",
+      "e2e"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright"
+    ],
+    "name": "Playwright and modern E2E testing",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "Automation",
+      "SDET",
+      "QA Lead"
+    ],
+    "risks": [
+      "Poor waits",
+      "Unstable test data",
+      "Weak page models"
+    ],
+    "recommended_practices": [
+      "Trace review",
+      "Page model governance",
+      "Risk-based flow selection"
+    ]
+  },
+  {
+    "id": "observability-driven-qa",
+    "title": "Observability-driven QA",
+    "summary": "QA teams increasingly use logs, metrics and traces as release evidence and production feedback signals.",
+    "tags": [
+      "observability",
+      "opentelemetry"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://opentelemetry.io/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-cncf-opentelemetry"
+    ],
+    "name": "Observability-driven QA",
+    "state": "Growing",
+    "impact": "High",
+    "applicability": [
+      "QA Lead",
+      "Engineering Manager",
+      "SDET"
+    ],
+    "risks": [
+      "Incomplete instrumentation",
+      "Noise without triage"
+    ],
+    "recommended_practices": [
+      "Define QA signal taxonomy",
+      "Use traces for critical flows"
+    ]
+  },
+  {
+    "id": "accessibility-quality-gates",
+    "title": "Accessibility quality gates",
+    "summary": "Accessibility should be integrated into design, development and release gates instead of treated as a late audit.",
+    "tags": [
+      "accessibility",
+      "wcag"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.w3.org/TR/WCAG22/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-wcag-22"
+    ],
+    "name": "Accessibility quality gates",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "Manual QA",
+      "Automation",
+      "QA Lead"
+    ],
+    "risks": [
+      "Relying only on automation",
+      "Late remediation"
+    ],
+    "recommended_practices": [
+      "WCAG-based checklist",
+      "Automated smoke checks",
+      "Manual exploratory review"
+    ]
+  },
+  {
+    "id": "security-testing-baseline",
+    "title": "Security testing baseline",
+    "summary": "QA teams should coordinate with security to include basic web security testing signals in quality strategy.",
+    "tags": [
+      "security",
+      "devsecops"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-wstg"
+    ],
+    "name": "Security testing baseline",
+    "state": "Mature",
+    "impact": "Critical",
+    "applicability": [
+      "QA Lead",
+      "SDET",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Checklist theater",
+      "Ignoring threat context"
+    ],
+    "recommended_practices": [
+      "Use OWASP WSTG",
+      "Define scope",
+      "Coordinate with security owners"
+    ]
+  },
+  {
+    "id": "shift-left-quality",
+    "title": "Shift-left quality practices",
+    "summary": "Quality activities move earlier in the lifecycle through design reviews, static analysis and developer-owned tests.",
+    "tags": [
+      "shift-left",
+      "quality"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testing.googleblog.com/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-google-testing-blog"
+    ],
+    "name": "Shift-left quality practices",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "QA Lead",
+      "Engineering Manager",
+      "SDET"
+    ],
+    "risks": [
+      "Blaming QA for late defects",
+      "Skipping exploratory work"
+    ],
+    "recommended_practices": [
+      "Three Amigos sessions",
+      "Definition of Done with test evidence",
+      "Early risk workshops"
+    ]
+  },
+  {
+    "id": "contract-testing-microservices",
+    "title": "Contract testing for microservices",
+    "summary": "Consumer-driven contract tests reduce integration failures when services evolve independently.",
+    "tags": [
+      "contract-testing",
+      "microservices"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-pact"
+    ],
+    "name": "Contract testing for microservices",
+    "state": "Growing",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Contracts without consumer ownership",
+      "False safety from mocks"
+    ],
+    "recommended_practices": [
+      "Pact in CI",
+      "Provider verification",
+      "Version contract changes"
+    ]
+  },
+  {
+    "id": "performance-engineering-k6",
+    "title": "Performance engineering with k6",
+    "summary": "Load and soak testing with scriptable tools like k6 helps validate SLOs before release.",
+    "tags": [
+      "performance",
+      "k6"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://grafana.com/docs/k6/latest/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-k6"
+    ],
+    "name": "Performance engineering with k6",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Lead",
+      "Performance Engineer"
+    ],
+    "risks": [
+      "Testing prod-like data in wrong env",
+      "Vanity metrics without SLOs"
+    ],
+    "recommended_practices": [
+      "Baseline thresholds",
+      "Soak tests in staging",
+      "Link results to release gates"
+    ]
+  },
+  {
+    "id": "mobile-cross-platform-testing",
+    "title": "Mobile and cross-platform testing",
+    "summary": "Mobile QA combines device farms, emulators and accessibility checks across iOS and Android.",
+    "tags": [
+      "mobile",
+      "appium"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.selenium.dev/documentation/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-selenium"
+    ],
+    "name": "Mobile and cross-platform testing",
+    "state": "Mature",
+    "impact": "Medium",
+    "applicability": [
+      "Manual QA",
+      "Automation",
+      "SDET"
+    ],
+    "risks": [
+      "Fragmentation",
+      "Flaky device farms"
+    ],
+    "recommended_practices": [
+      "Critical path on real devices",
+      "Smoke on emulators",
+      "Accessibility on mobile"
+    ]
+  },
+  {
+    "id": "test-data-management-strategy",
+    "title": "Test data management strategy",
+    "summary": "Reliable QA depends on controlled, refreshable test data instead of shared production copies.",
+    "tags": [
+      "test-data",
+      "reliability"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testing.googleblog.com/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-google-testing-blog"
+    ],
+    "name": "Test data management strategy",
+    "state": "Growing",
+    "impact": "Medium",
+    "applicability": [
+      "SDET",
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "PII in test envs",
+      "Stale fixtures"
+    ],
+    "recommended_practices": [
+      "Synthetic data",
+      "Data refresh pipelines",
+      "Isolation per test run"
+    ]
+  },
+  {
+    "id": "flaky-test-triage",
+    "title": "Flaky test triage and quarantine",
+    "summary": "Teams treat flaky tests as product defects: quarantine, root-cause and fix before they erode trust.",
+    "tags": [
+      "flaky",
+      "ci"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testing.googleblog.com/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-google-testing-blog"
+    ],
+    "name": "Flaky test triage and quarantine",
+    "state": "Growing",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Ignoring flakes",
+      "Retry masking"
+    ],
+    "recommended_practices": [
+      "Flake budget",
+      "Quarantine policy",
+      "Trace-first debugging"
+    ]
+  },
+  {
+    "id": "structured-exploratory-testing",
+    "title": "Structured exploratory testing",
+    "summary": "Session-based exploratory testing with charters produces evidence without replacing automation.",
+    "tags": [
+      "exploratory",
+      "manual"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Structured exploratory testing",
+    "state": "Mature",
+    "impact": "Medium",
+    "applicability": [
+      "Manual QA",
+      "QA Lead"
+    ],
+    "risks": [
+      "Ad-hoc sessions without notes",
+      "No traceability"
+    ],
+    "recommended_practices": [
+      "Time-boxed charters",
+      "Session notes",
+      "Link findings to risks"
+    ]
+  },
+  {
+    "id": "chaos-resilience-testing",
+    "title": "Chaos and resilience testing",
+    "summary": "Injecting controlled failures validates recovery behavior and observability under stress.",
+    "tags": [
+      "chaos",
+      "resilience"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://dora.dev/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-dora"
+    ],
+    "name": "Chaos and resilience testing",
+    "state": "Emerging",
+    "impact": "Medium",
+    "applicability": [
+      "QA Lead",
+      "Engineering Manager",
+      "SDET"
+    ],
+    "risks": [
+      "Running chaos in prod without guardrails"
+    ],
+    "recommended_practices": [
+      "Start in staging",
+      "Define blast radius",
+      "Pair with SRE"
+    ]
+  },
+  {
+    "id": "visual-regression-governance",
+    "title": "Visual regression governance",
+    "summary": "Screenshot comparison catches UI regressions when paired with stable baselines and review workflows.",
+    "tags": [
+      "visual",
+      "regression"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/docs/test-snapshots",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright"
+    ],
+    "name": "Visual regression governance",
+    "state": "Growing",
+    "impact": "Medium",
+    "applicability": [
+      "Automation",
+      "SDET"
+    ],
+    "risks": [
+      "False positives from fonts",
+      "Unreviewed baseline updates"
+    ],
+    "recommended_practices": [
+      "Stable CI environment",
+      "Human review of diffs",
+      "Limit scope to critical UI"
+    ]
+  },
+  {
+    "id": "api-first-testing",
+    "title": "API-first testing strategy",
+    "summary": "Testing APIs directly with contracts and schemas catches defects faster than UI-only coverage.",
+    "tags": [
+      "api",
+      "integration"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://learning.postman.com/docs/tests-and-scripts/test-apis/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-postman"
+    ],
+    "name": "API-first testing strategy",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Lead"
+    ],
+    "risks": [
+      "Schema drift",
+      "Missing auth scenarios"
+    ],
+    "recommended_practices": [
+      "OpenAPI validation",
+      "Contract tests in CI",
+      "Negative path coverage"
+    ]
+  },
+  {
+    "id": "continuous-testing-pipelines",
+    "title": "Continuous testing in CI/CD",
+    "summary": "Automated tests run on every meaningful change with fast feedback and clear ownership.",
+    "tags": [
+      "ci",
+      "cd",
+      "automation"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.github.com/en/actions",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-github-actions"
+    ],
+    "name": "Continuous testing in CI/CD",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Long pipelines",
+      "False green from skipped tests"
+    ],
+    "recommended_practices": [
+      "Parallel shards",
+      "Required checks",
+      "Evidence artifacts"
+    ]
+  },
+  {
+    "id": "quality-engineering-culture",
+    "title": "Quality engineering culture",
+    "summary": "QA evolves from gatekeeper to quality coach embedded in delivery with measurable outcomes.",
+    "tags": [
+      "culture",
+      "dora"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://dora.dev/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-dora"
+    ],
+    "name": "Quality engineering culture",
+    "state": "Growing",
+    "impact": "High",
+    "applicability": [
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Metrics without context",
+      "Role confusion"
+    ],
+    "recommended_practices": [
+      "DORA metrics awareness",
+      "Quality OKRs",
+      "Blameless postmortems"
+    ]
+  },
+  {
+    "id": "agentic-qa-workflows",
+    "title": "Agentic QA workflows",
+    "summary": "LLM agents that explore apps or generate tests are emerging but need strict human validation gates.",
+    "tags": [
+      "ai",
+      "agents"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/mutation-testing",
+    "source_type": "official",
+    "confidence_level": "Opinion / Commentary",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-thoughtworks-mutation-testing"
+    ],
+    "name": "Agentic QA workflows",
+    "state": "Emerging",
+    "impact": "Critical",
+    "applicability": [
+      "SDET",
+      "QA Lead"
+    ],
+    "risks": [
+      "Unreviewed agent output",
+      "Security of credentials"
+    ],
+    "recommended_practices": [
+      "Human review gate",
+      "Sandbox environments",
+      "Mutation testing on generated suites"
+    ]
+  },
+  {
+    "id": "selenium-only-legacy",
+    "title": "Selenium-only automation strategy",
+    "summary": "Teams still on Selenium-only stacks face maintenance cost as modern tools offer better DX and traces.",
+    "tags": [
+      "selenium",
+      "legacy"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.selenium.dev/documentation/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-selenium"
+    ],
+    "name": "Selenium-only automation strategy",
+    "state": "Declining",
+    "impact": "Low",
+    "applicability": [
+      "Automation",
+      "SDET"
+    ],
+    "risks": [
+      "High maintenance",
+      "Slow feedback"
+    ],
+    "recommended_practices": [
+      "Gradual migration plan",
+      "Keep Selenium for legacy only"
+    ]
+  },
+  {
+    "id": "no-code-automation-hype",
+    "title": "No-code test automation hype",
+    "summary": "Vendor claims that no-code tools replace skilled QA often oversimplify maintenance and coverage needs.",
+    "tags": [
+      "hype",
+      "no-code"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Opinion / Commentary",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "No-code test automation hype",
+    "state": "Hype-risk",
+    "impact": "Medium",
+    "applicability": [
+      "QA Lead",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Vendor lock-in",
+      "Hidden maintenance"
+    ],
+    "recommended_practices": [
+      "Pilot with evidence",
+      "Compare TCO",
+      "Keep code escape hatches"
+    ]
+  },
+  {
+    "id": "ai-governance-standards-convergence",
+    "title": "AI governance standards convergence",
+    "summary": "ISO 42001, NIST AI RMF and EU AI Act push teams toward shared AI risk, documentation and testing vocabulary in QA programs.",
+    "tags": [
+      "standards",
+      "ai-governance",
+      "regulation"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/81230.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-42001",
+      "source-nist-ai-rmf",
+      "source-eu-ai-act"
+    ],
+    "name": "AI governance standards convergence",
+    "state": "Growing",
+    "impact": "Critical",
+    "applicability": [
+      "QA Lead",
+      "Engineering Manager",
+      "Compliance"
+    ],
+    "risks": [
+      "Overlapping frameworks causing confusion",
+      "Audit theater"
+    ],
+    "recommended_practices": [
+      "Pick primary framework per market",
+      "Cross-walk ISO 42001 and NIST RMF",
+      "EU AI Act gap assessment"
+    ]
+  },
+  {
+    "id": "regulatory-pressure-ai-testing",
+    "title": "Regulatory pressure on AI testing",
+    "summary": "Regulators and customers expect demonstrable test evidence for AI systems, not vendor demos or prompt-only checks.",
+    "tags": [
+      "standards",
+      "regulation",
+      "compliance"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-eu-ai-act",
+      "source-oecd-ai-principles"
+    ],
+    "name": "Regulatory pressure on AI testing",
+    "state": "Growing",
+    "impact": "Critical",
+    "applicability": [
+      "QA Lead",
+      "Compliance",
+      "Product"
+    ],
+    "risks": [
+      "Late discovery of conformity gaps",
+      "Undocumented human oversight"
+    ],
+    "recommended_practices": [
+      "Conformity test backlog",
+      "Technical documentation reviews",
+      "Post-market monitoring tests"
+    ]
+  },
+  {
+    "id": "iso-29119-formal-test-process",
+    "title": "ISO 29119 formal test process adoption",
+    "summary": "Mature organizations align test documentation and processes to ISO/IEC/IEEE 29119 for auditability alongside agile delivery.",
+    "tags": [
+      "standards",
+      "iso-29119",
+      "process"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/63712.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-29119"
+    ],
+    "name": "ISO 29119 formal test process adoption",
+    "state": "Mature",
+    "impact": "High",
+    "applicability": [
+      "QA Lead",
+      "SDET",
+      "Compliance"
+    ],
+    "risks": [
+      "Heavy templates slowing teams"
+    ],
+    "recommended_practices": [
+      "Lightweight 29119 templates",
+      "Link artifacts to CI evidence",
+      "AI-assisted doc with human review"
+    ]
+  },
+  {
+    "id": "llm-codegen-governance",
+    "title": "LLM code generation governance",
+    "summary": "Teams adopt NIST SSDF and OWASP LLM Top 10 controls to govern volume of AI-generated code entering production.",
+    "tags": [
+      "standards",
+      "codegen",
+      "security"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://csrc.nist.gov/Projects/ssdf",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-nist-ssdf",
+      "source-owasp-llm-top10"
+    ],
+    "name": "LLM code generation governance",
+    "state": "Growing",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "Security",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Unreviewed generated vulnerabilities",
+      "License contamination"
+    ],
+    "recommended_practices": [
+      "Tag AI-generated PRs",
+      "SSDF security gates",
+      "OWASP LLM red-team prompts"
+    ]
+  }
+]

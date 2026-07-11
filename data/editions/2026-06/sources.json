@@ -1,0 +1,565 @@
+[
+  {
+    "id": "source-playwright",
+    "name": "Playwright Official Documentation",
+    "url": "https://playwright.dev/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "trend",
+      "best-practice",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official Playwright documentation."
+  },
+  {
+    "id": "source-ministry-of-testing",
+    "name": "Ministry of Testing",
+    "url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "authority_level": "High",
+    "used_for": [
+      "community",
+      "events",
+      "learning",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Large QA community with events, articles and newsletter."
+  },
+  {
+    "id": "source-thoughtworks-mutation-testing",
+    "name": "Thoughtworks Technology Radar - Mutation Testing",
+    "url": "https://www.thoughtworks.com/radar/techniques/mutation-testing",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "trend",
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Industry radar entry useful for evaluating test strength."
+  },
+  {
+    "id": "source-cncf-opentelemetry",
+    "name": "CNCF OpenTelemetry",
+    "url": "https://opentelemetry.io/",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "trend",
+      "tool",
+      "best-practice",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official OpenTelemetry project site."
+  },
+  {
+    "id": "source-owasp-wstg",
+    "name": "OWASP Web Security Testing Guide",
+    "url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "tool",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Reference guide for web application security testing."
+  },
+  {
+    "id": "source-wcag-22",
+    "name": "W3C WCAG 2.2",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "accessibility",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "W3C Web Content Accessibility Guidelines 2.2."
+  },
+  {
+    "id": "source-allure-report",
+    "name": "Allure Report Documentation",
+    "url": "https://allurereport.org/docs/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official Allure Report documentation."
+  },
+  {
+    "id": "source-istqb",
+    "name": "ISTQB",
+    "url": "https://www.istqb.org/",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "community",
+      "certification",
+      "learning"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official ISTQB site."
+  },
+  {
+    "id": "source-testinguy",
+    "name": "TestingUy",
+    "url": "https://testinguy.org/",
+    "source_type": "community",
+    "authority_level": "Medium",
+    "used_for": [
+      "community",
+      "events"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "LATAM software testing community and conference."
+  },
+  {
+    "id": "source-cypress",
+    "name": "Cypress Documentation",
+    "url": "https://docs.cypress.io/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "trend",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official Cypress testing framework documentation."
+  },
+  {
+    "id": "source-k6",
+    "name": "Grafana k6 Documentation",
+    "url": "https://grafana.com/docs/k6/latest/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "trend",
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official k6 load and performance testing documentation."
+  },
+  {
+    "id": "source-testrail",
+    "name": "TestRail",
+    "url": "https://www.testrail.com/",
+    "source_type": "vendor",
+    "authority_level": "Medium",
+    "used_for": [
+      "tool"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Test case management platform; vendor documentation."
+  },
+  {
+    "id": "source-selenium",
+    "name": "Selenium Project",
+    "url": "https://www.selenium.dev/documentation/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Official Selenium WebDriver documentation."
+  },
+  {
+    "id": "source-axe-core",
+    "name": "Deque axe-core",
+    "url": "https://github.com/dequelabs/axe-core",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "best-practice",
+      "accessibility"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Open-source accessibility testing engine."
+  },
+  {
+    "id": "source-postman",
+    "name": "Postman Learning Center",
+    "url": "https://learning.postman.com/docs/tests-and-scripts/test-apis/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Postman API testing and automation documentation."
+  },
+  {
+    "id": "source-pact",
+    "name": "Pact Contract Testing",
+    "url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "trend",
+      "best-practice",
+      "tool"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Consumer-driven contract testing documentation."
+  },
+  {
+    "id": "source-reportportal",
+    "name": "ReportPortal",
+    "url": "https://reportportal.io/",
+    "source_type": "documentation",
+    "authority_level": "Medium",
+    "used_for": [
+      "tool"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "AI-assisted test reporting and analytics platform."
+  },
+  {
+    "id": "source-test-automation-u",
+    "name": "Test Automation University",
+    "url": "https://testautomationu.applitools.com/",
+    "source_type": "community",
+    "authority_level": "High",
+    "used_for": [
+      "community",
+      "learning"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Free test automation courses from Applitools."
+  },
+  {
+    "id": "source-software-testing-weekly",
+    "name": "Software Testing Weekly",
+    "url": "https://softwaretestingweekly.com/",
+    "source_type": "news",
+    "authority_level": "Medium",
+    "used_for": [
+      "news",
+      "community"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Curated weekly newsletter of QA articles and tools."
+  },
+  {
+    "id": "source-eurostar",
+    "name": "EuroSTAR Software Testing Conference",
+    "url": "https://eurostarsoftwaretesting.com/",
+    "source_type": "community",
+    "authority_level": "High",
+    "used_for": [
+      "events",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Major European software testing conference."
+  },
+  {
+    "id": "source-dora",
+    "name": "DORA Research Program",
+    "url": "https://dora.dev/",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "trend",
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "DevOps Research and Assessment metrics and reports."
+  },
+  {
+    "id": "source-jmeter",
+    "name": "Apache JMeter",
+    "url": "https://jmeter.apache.org/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Apache JMeter load testing tool documentation."
+  },
+  {
+    "id": "source-w3c-wai",
+    "name": "W3C Web Accessibility Initiative",
+    "url": "https://www.w3.org/WAI/",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "accessibility",
+      "best-practice",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "W3C accessibility standards and guidance hub."
+  },
+  {
+    "id": "source-google-testing-blog",
+    "name": "Google Testing Blog",
+    "url": "https://testing.googleblog.com/",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "news",
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Google engineering testing practices blog."
+  },
+  {
+    "id": "source-webaim",
+    "name": "WebAIM",
+    "url": "https://webaim.org/",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "accessibility",
+      "best-practice",
+      "community"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Web accessibility research and training organization."
+  },
+  {
+    "id": "source-owasp-zap",
+    "name": "OWASP ZAP",
+    "url": "https://www.zaproxy.org/",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "security"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "OWASP Zed Attack Proxy for dynamic security testing."
+  },
+  {
+    "id": "source-github-actions",
+    "name": "GitHub Actions Documentation",
+    "url": "https://docs.github.com/en/actions",
+    "source_type": "documentation",
+    "authority_level": "High",
+    "used_for": [
+      "tool",
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "CI/CD workflow documentation for GitHub Actions."
+  },
+  {
+    "id": "source-iso-42001",
+    "name": "ISO/IEC 42001 — AI management systems",
+    "url": "https://www.iso.org/standard/81230.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "International standard for establishing and improving AI management systems."
+  },
+  {
+    "id": "source-iso-23894",
+    "name": "ISO/IEC 23894 — AI risk management",
+    "url": "https://www.iso.org/standard/77304.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Guidance on identifying and treating AI-related risks."
+  },
+  {
+    "id": "source-iso-5338",
+    "name": "ISO/IEC 5338 — AI system life cycle",
+    "url": "https://www.iso.org/standard/74438.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Processes for AI system development, operation and retirement."
+  },
+  {
+    "id": "source-iso-25010",
+    "name": "ISO/IEC 25010 — Software product quality model",
+    "url": "https://www.iso.org/standard/35733.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Quality characteristics for evaluating software products."
+  },
+  {
+    "id": "source-iso-25059",
+    "name": "ISO/IEC 25059 — Quality model for AI systems",
+    "url": "https://www.iso.org/standard/78176.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Extends SQuaRE quality models to AI-based systems."
+  },
+  {
+    "id": "source-iso-29119",
+    "name": "ISO/IEC/IEEE 29119 — Software testing",
+    "url": "https://www.iso.org/standard/63712.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend",
+      "news"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "International software testing concepts, processes and documentation."
+  },
+  {
+    "id": "source-iso-33001",
+    "name": "ISO/IEC 33001 — Process assessment",
+    "url": "https://www.iso.org/standard/54178.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Framework for assessing process capability and maturity."
+  },
+  {
+    "id": "source-nist-ai-rmf",
+    "name": "NIST AI Risk Management Framework 1.0",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend",
+      "news",
+      "signal"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "US voluntary framework for managing AI risks across the lifecycle."
+  },
+  {
+    "id": "source-nist-ssdf",
+    "name": "NIST Secure Software Development Framework",
+    "url": "https://csrc.nist.gov/Projects/ssdf",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Practices for producing secure software including supply-chain controls."
+  },
+  {
+    "id": "source-eu-ai-act",
+    "name": "EU Artificial Intelligence Act (Regulation 2024/1689)",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend",
+      "news",
+      "signal"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "EU regulation on AI systems including high-risk requirements."
+  },
+  {
+    "id": "source-owasp-llm-top10",
+    "name": "OWASP Top 10 for LLM Applications",
+    "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "news",
+      "signal"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Top security risks for applications using large language models."
+  },
+  {
+    "id": "source-owasp-asvs",
+    "name": "OWASP Application Security Verification Standard",
+    "url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Security verification requirements for web applications."
+  },
+  {
+    "id": "source-ieee-1012",
+    "name": "IEEE 1012 — Software verification and validation",
+    "url": "https://standards.ieee.org/standard/1012-2016.html",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "V&V processes and activities for software throughout its life cycle."
+  },
+  {
+    "id": "source-etsi-en-303645",
+    "name": "ETSI EN 303 645 — Consumer IoT security",
+    "url": "https://www.etsi.org/standards",
+    "source_type": "standard",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "Baseline cybersecurity requirements for consumer IoT devices."
+  },
+  {
+    "id": "source-oecd-ai-principles",
+    "name": "OECD AI Principles",
+    "url": "https://www.oecd.org/en/topics/sub-issues/ai-principles.html",
+    "source_type": "official",
+    "authority_level": "High",
+    "used_for": [
+      "best-practice",
+      "trend"
+    ],
+    "last_checked": "2026-06-09",
+    "notes": "International policy principles for trustworthy AI."
+  }
+]

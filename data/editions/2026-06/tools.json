@@ -1,0 +1,419 @@
+[
+  {
+    "id": "playwright",
+    "title": "Playwright",
+    "summary": "Modern browser automation for reliable E2E testing across Chromium, Firefox and WebKit.",
+    "tags": [
+      "e2e"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright"
+    ],
+    "name": "Playwright",
+    "category": "E2E automation",
+    "maturity": "Mature",
+    "recommended_use": "Critical browser E2E flows and trace-based debugging.",
+    "risks_limitations": [
+      "Flaky tests with poor waits"
+    ],
+    "integrations": [
+      "GitHub Actions",
+      "Allure"
+    ],
+    "alternatives": [
+      "Cypress",
+      "Selenium"
+    ],
+    "official_site": "https://playwright.dev/"
+  },
+  {
+    "id": "allure-report",
+    "title": "Allure Report",
+    "summary": "Framework-agnostic test result visualization for interactive HTML reports.",
+    "tags": [
+      "reporting"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://allurereport.org/docs/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-allure-report"
+    ],
+    "name": "Allure Report",
+    "category": "Reporting",
+    "maturity": "Mature",
+    "recommended_use": "Evidence packs and stakeholder-readable results.",
+    "risks_limitations": [
+      "Report does not equal release decision"
+    ],
+    "integrations": [
+      "Playwright",
+      "pytest"
+    ],
+    "alternatives": [
+      "ReportPortal"
+    ],
+    "official_site": "https://allurereport.org/docs/"
+  },
+  {
+    "id": "cypress",
+    "title": "Cypress",
+    "summary": "Developer-friendly E2E and component testing with time-travel debugging.",
+    "tags": [
+      "e2e",
+      "component"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.cypress.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-cypress"
+    ],
+    "name": "Cypress",
+    "category": "E2E automation",
+    "maturity": "Mature",
+    "recommended_use": "Component and E2E tests for JavaScript apps.",
+    "risks_limitations": [
+      "Limited multi-tab scenarios"
+    ],
+    "integrations": [
+      "GitHub Actions",
+      "Cypress Cloud"
+    ],
+    "alternatives": [
+      "Playwright"
+    ],
+    "official_site": "https://www.cypress.io/"
+  },
+  {
+    "id": "k6",
+    "title": "Grafana k6",
+    "summary": "Scriptable load testing for performance and soak tests in CI.",
+    "tags": [
+      "performance"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://grafana.com/docs/k6/latest/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-k6"
+    ],
+    "name": "Grafana k6",
+    "category": "Performance testing",
+    "maturity": "Mature",
+    "recommended_use": "Load, stress and soak tests with thresholds.",
+    "risks_limitations": [
+      "Needs realistic test data"
+    ],
+    "integrations": [
+      "Grafana Cloud",
+      "GitHub Actions"
+    ],
+    "alternatives": [
+      "JMeter"
+    ],
+    "official_site": "https://k6.io/"
+  },
+  {
+    "id": "testrail",
+    "title": "TestRail",
+    "summary": "Test case management for planning, execution tracking and reporting.",
+    "tags": [
+      "test-management"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.testrail.com/",
+    "source_type": "vendor",
+    "confidence_level": "Vendor Claim",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-testrail"
+    ],
+    "name": "TestRail",
+    "category": "Test management",
+    "maturity": "Mature",
+    "recommended_use": "Structured test plans and execution history.",
+    "risks_limitations": [
+      "Can become bureaucracy without CI integration"
+    ],
+    "integrations": [
+      "Jira",
+      "CI plugins"
+    ],
+    "alternatives": [
+      "Xray",
+      "Zephyr"
+    ],
+    "official_site": "https://www.testrail.com/"
+  },
+  {
+    "id": "selenium-webdriver",
+    "title": "Selenium WebDriver",
+    "summary": "W3C standard browser automation with broad language bindings.",
+    "tags": [
+      "e2e",
+      "legacy"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.selenium.dev/documentation/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-selenium"
+    ],
+    "name": "Selenium WebDriver",
+    "category": "E2E automation",
+    "maturity": "Mature",
+    "recommended_use": "Legacy suites and languages without Playwright support.",
+    "risks_limitations": [
+      "Higher maintenance than modern tools"
+    ],
+    "integrations": [
+      "Grid",
+      "Allure"
+    ],
+    "alternatives": [
+      "Playwright",
+      "WebdriverIO"
+    ],
+    "official_site": "https://www.selenium.dev/"
+  },
+  {
+    "id": "axe-core",
+    "title": "axe-core",
+    "summary": "Automated accessibility rule engine for CI and browser extensions.",
+    "tags": [
+      "accessibility"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://github.com/dequelabs/axe-core",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-axe-core"
+    ],
+    "name": "axe-core",
+    "category": "Accessibility testing",
+    "maturity": "Mature",
+    "recommended_use": "Automated a11y smoke in CI; pair with manual checks.",
+    "risks_limitations": [
+      "Does not replace keyboard or screen reader testing"
+    ],
+    "integrations": [
+      "Playwright",
+      "Cypress",
+      "Jest"
+    ],
+    "alternatives": [
+      "Pa11y"
+    ],
+    "official_site": "https://www.deque.com/axe/"
+  },
+  {
+    "id": "postman",
+    "title": "Postman",
+    "summary": "API client and test runner for collections, mocks and CI Newman runs.",
+    "tags": [
+      "api"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://learning.postman.com/docs/tests-and-scripts/test-apis/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-postman"
+    ],
+    "name": "Postman",
+    "category": "API testing",
+    "maturity": "Mature",
+    "recommended_use": "API functional and contract-style checks.",
+    "risks_limitations": [
+      "Collection drift without version control"
+    ],
+    "integrations": [
+      "Newman",
+      "GitHub Actions"
+    ],
+    "alternatives": [
+      "REST Assured",
+      "Insomnia"
+    ],
+    "official_site": "https://www.postman.com/"
+  },
+  {
+    "id": "owasp-zap",
+    "title": "OWASP ZAP",
+    "summary": "Open-source DAST proxy for security scanning and baseline checks.",
+    "tags": [
+      "security"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.zaproxy.org/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-zap"
+    ],
+    "name": "OWASP ZAP",
+    "category": "Security testing",
+    "maturity": "Mature",
+    "recommended_use": "Baseline DAST scans in staging with security triage.",
+    "risks_limitations": [
+      "Not a substitute for pen testing"
+    ],
+    "integrations": [
+      "CI",
+      "API"
+    ],
+    "alternatives": [
+      "Burp Suite Community"
+    ],
+    "official_site": "https://www.zaproxy.org/"
+  },
+  {
+    "id": "reportportal",
+    "title": "ReportPortal",
+    "summary": "Centralized test reporting with history, analytics and ML-assisted analysis.",
+    "tags": [
+      "reporting"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://reportportal.io/",
+    "source_type": "documentation",
+    "confidence_level": "Vendor Claim",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-reportportal"
+    ],
+    "name": "ReportPortal",
+    "category": "Reporting",
+    "maturity": "Growing",
+    "recommended_use": "Large suites needing historical flake analysis.",
+    "risks_limitations": [
+      "Operational overhead for self-hosted"
+    ],
+    "integrations": [
+      "JUnit",
+      "TestNG",
+      "pytest"
+    ],
+    "alternatives": [
+      "Allure"
+    ],
+    "official_site": "https://reportportal.io/"
+  },
+  {
+    "id": "jmeter",
+    "title": "Apache JMeter",
+    "summary": "Java-based load testing tool with GUI and CLI for HTTP and more.",
+    "tags": [
+      "performance"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://jmeter.apache.org/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-jmeter"
+    ],
+    "name": "Apache JMeter",
+    "category": "Performance testing",
+    "maturity": "Mature",
+    "recommended_use": "Teams already standardized on JMeter test plans.",
+    "risks_limitations": [
+      "GUI-heavy plans hard to version"
+    ],
+    "integrations": [
+      "CI",
+      "BlazeMeter"
+    ],
+    "alternatives": [
+      "k6",
+      "Gatling"
+    ],
+    "official_site": "https://jmeter.apache.org/"
+  },
+  {
+    "id": "pact",
+    "title": "Pact",
+    "summary": "Consumer-driven contract testing framework for microservices.",
+    "tags": [
+      "contract-testing"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-pact"
+    ],
+    "name": "Pact",
+    "category": "Contract testing",
+    "maturity": "Mature",
+    "recommended_use": "API contracts between consumer and provider teams.",
+    "risks_limitations": [
+      "Requires cultural buy-in on contracts"
+    ],
+    "integrations": [
+      "Pact Broker",
+      "CI"
+    ],
+    "alternatives": [
+      "Spring Cloud Contract"
+    ],
+    "official_site": "https://docs.pact.io/"
+  }
+]

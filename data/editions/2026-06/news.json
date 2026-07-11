@@ -1,0 +1,480 @@
+[
+  {
+    "id": "playwright-1-52-release",
+    "title": "Playwright 1.52 adds improved trace viewer and component testing hooks",
+    "summary": "Playwright releases continue to improve trace debugging and component testing, giving QA teams faster root-cause analysis in CI failures.",
+    "tags": [
+      "playwright",
+      "release"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/docs/release-notes",
+    "source_type": "documentation",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright"
+    ],
+    "source_name": "Playwright",
+    "published_at": "2026-04-15",
+    "impact_category": "Tooling",
+    "qa_impact": "Better trace review and component test support for regression cycles.",
+    "suggested_action": "Review release notes and pilot new trace features on one flaky suite."
+  },
+  {
+    "id": "wcag-22-adoption-2025",
+    "title": "WCAG 2.2 adoption accelerates in enterprise accessibility programs",
+    "summary": "Organizations align accessibility gates to WCAG 2.2 criteria including focus appearance and dragging movements.",
+    "tags": [
+      "accessibility",
+      "wcag"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-w3c-wai"
+    ],
+    "source_name": "W3C WAI",
+    "published_at": "2025-11-20",
+    "impact_category": "Compliance",
+    "qa_impact": "QA checklists must include WCAG 2.2 success criteria beyond 2.1.",
+    "suggested_action": "Update accessibility smoke checklist to WCAG 2.2 focus and target size rules."
+  },
+  {
+    "id": "opentelemetry-qa-adoption",
+    "title": "OpenTelemetry adoption grows as QA teams seek production feedback loops",
+    "summary": "More teams instrument critical flows with OpenTelemetry to connect incidents with regression priorities.",
+    "tags": [
+      "observability"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://opentelemetry.io/blog/",
+    "source_type": "official",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-cncf-opentelemetry"
+    ],
+    "source_name": "OpenTelemetry",
+    "published_at": "2026-03-01",
+    "impact_category": "Strategic",
+    "qa_impact": "Release evidence can include trace IDs linked to test runs.",
+    "suggested_action": "Map top five user journeys to required spans and logs."
+  },
+  {
+    "id": "k6-grafana-cloud-load-testing",
+    "title": "Grafana expands k6 cloud load testing for CI pipelines",
+    "summary": "k6 cloud integrations make it easier to run load tests from CI with shared thresholds and dashboards.",
+    "tags": [
+      "performance",
+      "k6"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://grafana.com/docs/k6/latest/",
+    "source_type": "documentation",
+    "confidence_level": "Vendor Claim",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-k6"
+    ],
+    "source_name": "Grafana k6",
+    "published_at": "2025-09-10",
+    "impact_category": "Tooling",
+    "qa_impact": "Performance gates can run closer to release with scripted thresholds.",
+    "suggested_action": "Define SLO-based thresholds for staging load tests before adopting cloud runners."
+  },
+  {
+    "id": "owasp-wstg-2025-update",
+    "title": "OWASP WSTG continues as primary web security testing reference for QA",
+    "summary": "The OWASP Web Security Testing Guide remains the practical baseline QA teams use with security partners.",
+    "tags": [
+      "security",
+      "owasp"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-wstg"
+    ],
+    "source_name": "OWASP",
+    "published_at": "2025-08-05",
+    "impact_category": "Security",
+    "qa_impact": "Security smoke tests should reference WSTG categories relevant to your app.",
+    "suggested_action": "Pick five WSTG tests aligned to your threat model for quarterly rotation."
+  },
+  {
+    "id": "cypress-component-testing-momentum",
+    "title": "Cypress component testing gains traction for design-system QA",
+    "summary": "Teams use Cypress component tests to validate UI primitives before full E2E suites run.",
+    "tags": [
+      "cypress",
+      "component"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.cypress.io/app/component-testing/get-started",
+    "source_type": "documentation",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-cypress"
+    ],
+    "source_name": "Cypress",
+    "published_at": "2026-01-22",
+    "impact_category": "Tooling",
+    "qa_impact": "Faster feedback on UI components reduces E2E maintenance.",
+    "suggested_action": "Pilot component tests on one design-system package."
+  },
+  {
+    "id": "ai-test-generation-caution",
+    "title": "Industry caution rises on AI-generated tests without mutation checks",
+    "summary": "Practitioners warn that LLM-generated tests often pass while missing assertions on critical logic.",
+    "tags": [
+      "ai",
+      "mutation-testing"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/mutation-testing",
+    "source_type": "official",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-thoughtworks-mutation-testing"
+    ],
+    "source_name": "Thoughtworks Radar",
+    "published_at": "2026-02-10",
+    "impact_category": "Governance",
+    "qa_impact": "AI-assisted suites need mutation or review gates before merge.",
+    "suggested_action": "Run mutation testing on one AI-generated module and document findings."
+  },
+  {
+    "id": "ministry-testing-the-testing-awards",
+    "title": "Ministry of Testing highlights community learning and conference season",
+    "summary": "MoT community events and newsletters continue to surface practical testing talks and workshops globally.",
+    "tags": [
+      "community",
+      "events"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "source_name": "Ministry of Testing",
+    "published_at": "2026-05-01",
+    "impact_category": "Community",
+    "qa_impact": "Good source for conference recordings and peer learning paths.",
+    "suggested_action": "Subscribe to the newsletter and bookmark two talks relevant to your stack."
+  },
+  {
+    "id": "dora-2025-quality-metrics",
+    "title": "DORA 2025 report reinforces quality metrics tied to delivery performance",
+    "summary": "DORA research links testing practices and stability metrics with organizational performance outcomes.",
+    "tags": [
+      "dora",
+      "metrics"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://dora.dev/research/",
+    "source_type": "official",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-dora"
+    ],
+    "source_name": "DORA",
+    "published_at": "2025-10-15",
+    "impact_category": "Strategic",
+    "qa_impact": "QA leaders can align flake rate and change failure rate with leadership goals.",
+    "suggested_action": "Track change failure rate alongside test pass rate for one quarter."
+  },
+  {
+    "id": "axe-core-4-accessibility",
+    "title": "axe-core 4.x improves automated accessibility rule coverage",
+    "summary": "Deque axe-core updates expand automated checks while manual keyboard review remains essential.",
+    "tags": [
+      "accessibility",
+      "automation"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://github.com/dequelabs/axe-core",
+    "source_type": "documentation",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-axe-core"
+    ],
+    "source_name": "Deque axe-core",
+    "published_at": "2025-12-01",
+    "impact_category": "Tooling",
+    "qa_impact": "CI accessibility smoke can catch more violations early.",
+    "suggested_action": "Integrate axe in CI for critical pages and pair with manual keyboard tests."
+  },
+  {
+    "id": "pact-broker-enterprise-adoption",
+    "title": "Contract testing with Pact Broker sees wider microservices adoption",
+    "summary": "Teams publish consumer contracts to Pact Broker to catch breaking API changes before integration tests.",
+    "tags": [
+      "contract-testing",
+      "api"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-pact"
+    ],
+    "source_name": "Pact",
+    "published_at": "2026-02-28",
+    "impact_category": "Architecture",
+    "qa_impact": "Reduces integration test lag when services deploy independently.",
+    "suggested_action": "Introduce one consumer-provider contract pair in CI."
+  },
+  {
+    "id": "software-testing-weekly-curation",
+    "title": "Software Testing Weekly curates rising topics in AI and observability QA",
+    "summary": "The weekly newsletter continues aggregating practitioner articles on AI testing and production quality.",
+    "tags": [
+      "newsletter",
+      "curation"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://softwaretestingweekly.com/",
+    "source_type": "news",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-software-testing-weekly"
+    ],
+    "source_name": "Software Testing Weekly",
+    "published_at": "2026-05-20",
+    "impact_category": "Community",
+    "qa_impact": "Low-effort scan of industry chatter without vendor filter.",
+    "suggested_action": "Skim weekly issues and flag two articles for team discussion."
+  },
+  {
+    "id": "postman-api-testing-governance",
+    "title": "Postman collections become standard for API test governance",
+    "summary": "Teams centralize API tests in Postman workspaces with environment parity for staging and prod-like data.",
+    "tags": [
+      "api",
+      "postman"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://learning.postman.com/docs/tests-and-scripts/test-apis/",
+    "source_type": "documentation",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-postman"
+    ],
+    "source_name": "Postman",
+    "published_at": "2025-07-18",
+    "impact_category": "Tooling",
+    "qa_impact": "API regression can run before UI suites in CI.",
+    "suggested_action": "Export critical Postman collections to CI with schema assertions."
+  },
+  {
+    "id": "eurostar-2025-recap",
+    "title": "EuroSTAR 2025 sessions emphasize quality engineering and AI governance",
+    "summary": "Conference recordings cover shift-left culture, flaky test management and responsible AI in testing.",
+    "tags": [
+      "conference",
+      "quality-engineering"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://eurostarsoftwaretesting.com/",
+    "source_type": "community",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-eurostar"
+    ],
+    "source_name": "EuroSTAR",
+    "published_at": "2025-11-30",
+    "impact_category": "Community",
+    "qa_impact": "Leadership-oriented QA strategy content from European practitioners.",
+    "suggested_action": "Watch one EuroSTAR talk on quality metrics and share notes with the team."
+  },
+  {
+    "id": "iso-42001-available-2023",
+    "title": "ISO/IEC 42001 published as first AI management system standard",
+    "summary": "ISO 42001 gives organizations a certifiable framework for AI governance; QA teams should map test policies and evidence to its controls.",
+    "tags": [
+      "standards",
+      "iso-42001"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/81230.html",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-42001"
+    ],
+    "source_name": "ISO",
+    "published_at": "2023-12-18",
+    "impact_category": "Governance",
+    "qa_impact": "Audit-ready AI testing requires documented policies linked to ISO 42001.",
+    "suggested_action": "Read ISO 42001 scope and list QA-controlled processes for gap analysis."
+  },
+  {
+    "id": "nist-ai-rmf-1-0-playbook",
+    "title": "NIST AI Risk Management Framework 1.0 and Playbook remain key US reference",
+    "summary": "NIST AI RMF 1.0 structures AI risk into Govern, Map, Measure and Manage; QA can align eval harnesses and monitoring to Measure/Manage.",
+    "tags": [
+      "standards",
+      "nist",
+      "ai-rmf"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-nist-ai-rmf"
+    ],
+    "source_name": "NIST",
+    "published_at": "2023-01-26",
+    "impact_category": "Governance",
+    "qa_impact": "Shared vocabulary with security and data science for AI test planning.",
+    "suggested_action": "Download NIST AI RMF Playbook and map one product's tests to Core functions."
+  },
+  {
+    "id": "eu-ai-act-2024-in-force",
+    "title": "EU AI Act (Regulation 2024/1689) entered into force August 2024",
+    "summary": "The EU AI Act imposes phased obligations for high-risk AI including conformity assessment, documentation and human oversight—directly affecting QA evidence.",
+    "tags": [
+      "standards",
+      "eu-ai-act",
+      "regulation"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-eu-ai-act"
+    ],
+    "source_name": "EUR-Lex",
+    "published_at": "2024-08-01",
+    "impact_category": "Compliance",
+    "qa_impact": "High-risk AI needs conformity tests, logging validation and oversight UX tests.",
+    "suggested_action": "Classify AI features with legal and draft conformity test backlog."
+  },
+  {
+    "id": "owasp-llm-top10-2025-update",
+    "title": "OWASP Top 10 for LLM Applications updated for evolving attack patterns",
+    "summary": "OWASP LLM Top 10 guides security testing for prompt injection, insecure plugins and training data poisoning relevant to codegen assistants.",
+    "tags": [
+      "standards",
+      "owasp",
+      "llm"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-llm-top10"
+    ],
+    "source_name": "OWASP",
+    "published_at": "2025-11-15",
+    "impact_category": "Security",
+    "qa_impact": "LLM feature and codegen pipelines need adversarial test cases from Top 10.",
+    "suggested_action": "Add three LLM Top 10 scenarios to security regression this quarter."
+  },
+  {
+    "id": "iso-25059-ai-quality-published",
+    "title": "ISO/IEC 25059 extends SQuaRE quality model to AI systems",
+    "summary": "ISO 25059 defines AI-specific quality characteristics teams can use for acceptance criteria beyond classic functional testing.",
+    "tags": [
+      "standards",
+      "iso-25059",
+      "quality"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/78176.html",
+    "source_type": "standard",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-25059"
+    ],
+    "source_name": "ISO",
+    "published_at": "2023-09-01",
+    "impact_category": "Governance",
+    "qa_impact": "AI releases can cite measurable quality characteristics in sign-off packs.",
+    "suggested_action": "Pick three ISO 25059 characteristics for your next AI feature acceptance sheet."
+  }
+]
