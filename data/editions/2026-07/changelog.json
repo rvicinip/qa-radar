@@ -83,5 +83,16 @@
     "reason": "Monthly QA Radar newspaper: a fresh dated edition with navigable evolution vs. June.",
     "source_ids": ["source-playwright", "source-ministry-of-testing"],
     "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-07-13-tw-radar-enrichment",
+    "date": "2026-07-13",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "updated",
+    "item_id": "qa-radar-edition-2026-07",
+    "summary": "Enriched July 2026 edition with content from ThoughtWorks Technology Radar Vol 34: 5 new trends, 5 news items, 4 tools, 4 signals, 3 ecosystem recs. Promoted 3 existing ecosystem items.",
+    "reason": "Technology Radar Vol 34 (April 2026) released with strong QA/agentic focus — agent skills, structured output, mutation testing, browser CT, feedback sensors.",
+    "source_ids": ["source-ministry-of-testing"],
+    "review_status": "reviewed"
   }
 ]

@@ -888,5 +888,196 @@
       "SSDF security gates",
       "OWASP LLM red-team prompts"
     ]
+  },
+  {
+    "id": "agent-driven-qa-workflows",
+    "title": "Agent-driven QA workflows",
+    "summary": "Agent Skills and team-of-agents patterns enable autonomous QA task execution: context selection, test generation, execution, and self-healing. Still emerging but moving fast.",
+    "tags": [
+      "ai",
+      "agents",
+      "automation"
+    ],
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13",
+    "reviewed_at": "2026-07-13",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/agent-skills",
+    "source_type": "opinion",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Agent-driven QA workflows",
+    "state": "Emerging",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Lead",
+      "QA Automation Engineer"
+    ],
+    "risks": [
+      "Agent instruction bloat",
+      "Unreviewed third-party skills",
+      "Context rot in long-running agents"
+    ],
+    "recommended_practices": [
+      "Start with single-agent task execution",
+      "Use curated shared instructions",
+      "Wire feedback sensors before scaling to teams"
+    ]
+  },
+  {
+    "id": "context-engineering-qa",
+    "title": "Context engineering for QA pipelines",
+    "summary": "Treating the LLM context window as a design surface: progressive disclosure, context graphs, and dynamic retrieval replace static monolithic prompts for QA agents.",
+    "tags": [
+      "ai",
+      "context",
+      "prompt-engineering"
+    ],
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13",
+    "reviewed_at": "2026-07-13",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/context-engineering",
+    "source_type": "opinion",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Context engineering for QA pipelines",
+    "state": "Emerging",
+    "impact": "Medium",
+    "applicability": [
+      "QA Lead",
+      "SDET",
+      "Engineering Manager"
+    ],
+    "risks": [
+      "Context rot with very large documents",
+      "Over-engineering the context pipeline"
+    ],
+    "recommended_practices": [
+      "Use context setup with prompt caching",
+      "Build context graphs for institutional QA knowledge",
+      "Practice progressive disclosure instead of dumping full runbooks"
+    ]
+  },
+  {
+    "id": "feedback-driven-qa-agents",
+    "title": "Feedback-driven QA agent improvement",
+    "summary": "Feedback flywheels and sensors (linters, compilers, test suites) wired into coding-agent workflows reduce review burden and improve first-pass acceptance rates. Analogous to retrospectives for agents.",
+    "tags": [
+      "ai",
+      "feedback",
+      "agents"
+    ],
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13",
+    "reviewed_at": "2026-07-13",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/feedback-sensors-for-coding-agents",
+    "source_type": "opinion",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Feedback-driven QA agent improvement",
+    "state": "Emerging",
+    "impact": "Medium",
+    "applicability": [
+      "QA Lead",
+      "SDET",
+      "QA Automation Engineer"
+    ],
+    "risks": [
+      "Metrics gaming if speed-only",
+      "Noisy feedback loops when not curated"
+    ],
+    "recommended_practices": [
+      "Wire deterministic QA gates into agentic flows",
+      "Track collaboration quality metrics alongside DORA",
+      "Use spec-driven workflows (spec → plan → implement → improve)"
+    ]
+  },
+  {
+    "id": "structured-output-test-generation",
+    "title": "Structured output from LLMs for test case generation",
+    "summary": "Constraining LLMs to produce tests in predefined formats (JSON, code classes) with libraries like Instructor or Pydantic AI. All major model providers now offer native structured output modes.",
+    "tags": [
+      "ai",
+      "test-generation",
+      "structured-output"
+    ],
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13",
+    "reviewed_at": "2026-07-13",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/structured-output-from-llms",
+    "source_type": "opinion",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Structured output from LLMs for test case generation",
+    "state": "Emerging",
+    "impact": "High",
+    "applicability": [
+      "SDET",
+      "QA Automation Engineer",
+      "QA Lead"
+    ],
+    "risks": [
+      "API differences in JSON Schema subsets across providers",
+      "Rapidly evolving APIs"
+    ],
+    "recommended_practices": [
+      "Use Instructor or Pydantic AI for provider-agnostic structured output",
+      "Validate outputs with Zod before accepting",
+      "Automatic retry on schema mismatch"
+    ]
+  },
+  {
+    "id": "mutation-testing-qa",
+    "title": "Mutation testing for QA suites",
+    "summary": "Mutation testing evaluates test suite quality by injecting faults and measuring detection rates. TW Radar promotes it to Trial; growing relevance with AI-generated tests that may produce weak assertions.",
+    "tags": [
+      "testing",
+      "mutation-testing",
+      "quality"
+    ],
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13",
+    "reviewed_at": "2026-07-13",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/mutation-testing",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-thoughtworks-mutation-testing",
+      "source-ministry-of-testing"
+    ],
+    "name": "Mutation testing for QA suites",
+    "state": "Emerging",
+    "impact": "Medium",
+    "applicability": [
+      "SDET",
+      "QA Automation Engineer"
+    ],
+    "risks": [
+      "Slow on large suites without parallelization",
+      "Equivalent mutants can inflate scores"
+    ],
+    "recommended_practices": [
+      "Start with cargo-mutants or Stryker on one critical module",
+      "Use as gate for AI-generated test acceptance",
+      "Track mutation score trend, not absolute threshold"
+    ]
   }
 ]

@@ -6,9 +6,10 @@
     "verdict": "trial",
     "target": "iq-qa",
     "source_ref": "playwright-1-53-release",
-    "status": "proposed",
+    "backlog_id": "VSC-8",
+    "status": "promoted",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-01"
+    "updated_at": "2026-07-13"
   },
   {
     "id": "eco-2026-07-02",
@@ -17,9 +18,10 @@
     "verdict": "adopt",
     "target": "ai-ops",
     "source_ref": "ai-assisted-testing",
-    "status": "proposed",
+    "backlog_id": "CFG-8",
+    "status": "promoted",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-01"
+    "updated_at": "2026-07-13"
   },
   {
     "id": "eco-2026-07-03",
@@ -28,8 +30,42 @@
     "verdict": "watch",
     "target": "iq-qa",
     "source_ref": "trace-viewer-plus",
-    "status": "proposed",
+    "backlog_id": "VSC-9",
+    "status": "promoted",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-01"
+    "updated_at": "2026-07-13"
+  },
+  {
+    "id": "eco-2026-07-04",
+    "title": "Adopt structured LLM output for all test-case generation",
+    "rationale": "TW Radar Vol 34 promotes Structured Output from LLMs to Adopt. Our test-case generation pipeline currently uses free-text LLM output; moving to structured JSON via Instructor/Pydantic AI improves reliability and enables automatic validation.",
+    "verdict": "adopt",
+    "target": "iq-qa",
+    "source_ref": "structured-output-test-generation",
+    "status": "proposed",
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13"
+  },
+  {
+    "id": "eco-2026-07-05",
+    "title": "Wire feedback sensors into the QA agentic workflow",
+    "rationale": "TW Radar promotes feedback sensors (linters, compilers, test suites) as gates in agentic workflows. Our validate:release chain (Zod + salience + format) is already a candidate sensor — wire it into agent sessions so failures trigger self-correction before commit.",
+    "verdict": "trial",
+    "target": "ai-ops",
+    "source_ref": "signal-feedback-sensors-qa",
+    "status": "proposed",
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13"
+  },
+  {
+    "id": "eco-2026-07-06",
+    "title": "Track DORA rework-rate metric for AI-generated test quality",
+    "rationale": "DORA now includes rework rate as 5th metric, specifically relevant to AI-assisted development where generated code quality must be tracked. Adding it to our QA metrics gives early warning on AI-generated test degradation.",
+    "verdict": "watch",
+    "target": "iq-qa",
+    "source_ref": "dora-rework-rate-2026",
+    "status": "proposed",
+    "created_at": "2026-07-13",
+    "updated_at": "2026-07-13"
   }
 ]
