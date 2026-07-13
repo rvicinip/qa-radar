@@ -10,7 +10,7 @@
     "validate:data": "tsx lib/data/validateData.ts && npm run validate:salience",
     "validate:salience": "node scripts/validate-salience.mjs",
     "validate:format": "node scripts/validate-format.mjs",
-    "validate:release": "npm run validate:data && npm run validate:salience && npm run validate:format",
+    "validate:release": "npm run validate:data && npm run validate:format",
     "validate:salient": "npm run validate:salience",
     "test:a11y": "tsx scripts/a11y-smoke.ts",
     "new:edition": "node scripts/new-edition.mjs"

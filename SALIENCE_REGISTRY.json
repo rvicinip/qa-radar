@@ -44,7 +44,7 @@
     {
       "id": "ecosystem-improvements",
       "user_request": "Each edition must recommend what we can do to improve our own ecosystem (AI-Ops / IntelliQuip QA)",
-      "surfaces": ["page:/editions", "ecosystem:improve-our-ecosystem"],
+      "surfaces": ["page:/editions/[id]", "ecosystem:improve-our-ecosystem"],
       "data_files": ["ecosystem.json"],
       "min_count": 3,
       "added": "2026-07-11"

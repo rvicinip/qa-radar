@@ -68,6 +68,10 @@ const SURFACE_CHECKS = {
     file: "app/editions/page.tsx",
     pattern: /.*/,
   },
+  "page:/editions/[id]": {
+    file: "app/editions/[id]/page.tsx",
+    pattern: /EcosystemSection/,
+  },
   "page:/evolution": {
     file: "app/evolution/page.tsx",
     pattern: /.*/,
