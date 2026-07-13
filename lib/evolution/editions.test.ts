@@ -74,11 +74,11 @@ test("July 2026 — curated edition", () => {
   const standards = getStandards("2026-07");
   const ecosystem = getEcosystem("2026-07");
 
-  // counts (June base + additions)
-  assert.equal(trends.length, 24, "24 trends");
-  assert.equal(news.length, 21, "21 news (19 + 2 new)");
-  assert.equal(tools.length, 13, "13 tools (12 + 1 new)");
-  assert.ok(signals.length >= 8, `signals >= 8 (got ${signals.length})`);
+  // counts (June base + additions + TW Radar Vol 34 enrichment)
+  assert.equal(trends.length, 29, "29 trends (24 + 5 new from TW Radar)");
+  assert.equal(news.length, 26, "26 news (19 + 2 new + 5 from TW Radar)");
+  assert.equal(tools.length, 17, "17 tools (12 + 1 new + 4 from TW Radar)");
+  assert.equal(signals.length, 20, "20 signals (16 + 4 new from TW Radar)");
   assert.equal(standards.length, 15, "15 standards");
 
   // July has ecosystem recommendations
@@ -138,7 +138,12 @@ test("identical files are truly identical between editions", () => {
   const julyStandards = JSON.stringify(getStandards("2026-07"));
   assert.equal(juneStandards, julyStandards, "standards identical");
 
-  const juneSignals = JSON.stringify(getSignals("2026-06"));
-  const julySignals = JSON.stringify(getSignals("2026-07"));
-  assert.equal(juneSignals, julySignals, "signals identical");
+  const juneSignals = getSignals("2026-06");
+  const julySignals = getSignals("2026-07");
+  assert.equal(juneSignals.length, 16, "June: 16 signals");
+  assert.equal(julySignals.length, 20, "July: 20 signals (16 + 4 new from TW Radar)");
+  const juneSignalIds = new Set(juneSignals.map((s) => s.id));
+  for (const s of juneSignals) {
+    assert.ok(julySignals.some((js) => js.id === s.id), `July missing signal: ${s.id}`);
+  }
 });
