@@ -1,0 +1,148 @@
+/*
+ * Canonical format — must match qa-radar-screen-mock-2026-06-09.html. Do not drift.
+ * Reference: /srv/ai-ops/runtime/qa-radar-screen-mock-2026-06-09.html
+ * Intentional format changes: update mock + this file together + changelog entry.
+ */
+
+:root {
+  --color-white: #fff;
+  --color-slate-50: #f6f8fb;
+  --color-slate-100: #eef3f8;
+  --color-slate-200: #e6edf5;
+  --color-slate-300: #d8e1ea;
+  --color-slate-400: #b8c7d6;
+  --color-slate-500: #8ba1b8;
+  --color-slate-600: #5b6b7d;
+  --color-slate-700: #3d4a5a;
+  --color-slate-800: #102033;
+  --color-slate-900: #0a1625;
+  --color-blue-500: #2563eb;
+  --color-blue-600: #1d4ed8;
+  --color-cyan: #0891b2;
+  --color-amber: #d97706;
+  --color-green: #059669;
+  --color-rose: #e11d48;
+  --color-violet: #7c3aed;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  --shadow-color: 16 32 51;
+  --shadow-op-md: 0.08;
+  --shadow-op-hi: 0.12;
+  --shadow-card: 0 10px 28px rgba(var(--shadow-color), var(--shadow-op-md));
+  --shadow-soft: 0 18px 52px rgba(var(--shadow-color), var(--shadow-op-hi));
+
+  --bg: var(--color-slate-50);
+  --surface: var(--color-white);
+  --surface-2: var(--color-slate-100);
+  --surface-3: var(--color-slate-200);
+  --ink: var(--color-slate-800);
+  --ink-secondary: var(--color-slate-600);
+  --muted: var(--color-slate-500);
+  --line: var(--color-slate-300);
+  --line-subtle: var(--color-slate-200);
+  --primary: var(--color-blue-500);
+  --primary-hover: var(--color-blue-600);
+  --blue: var(--color-blue-500);
+  --cyan: var(--color-cyan);
+  --amber: var(--color-amber);
+  --green: var(--color-green);
+  --rose: var(--color-rose);
+  --violet: var(--color-violet);
+
+  --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sidebar-w: 220px;
+
+  /* Hero gradient (mock-aligned) */
+  --hero-gradient-start: #0a1a2e;
+  --hero-gradient-mid: #102840;
+  --hero-gradient-end: #163a5c;
+  --hero-sub: #b8d4ea;
+  --hero-chip-text: #d8e8f8;
+  --hero-radial-cyan: rgba(8, 145, 178, 0.45);
+
+  /* Body ambient gradients */
+  --body-radial-cyan: rgba(8, 145, 178, 0.12);
+  --body-radial-blue: rgba(37, 99, 235, 0.08);
+
+  /* Brand glyph */
+  --brand-glyph-text: #fff;
+
+  /* Focus ring */
+  --focus-ring: rgba(37, 99, 235, 0.3);
+
+  /* Nav active state */
+  --nav-active-bg: rgba(37, 99, 235, 0.1);
+  --nav-active-border: rgba(37, 99, 235, 0.22);
+
+  /* Badge backgrounds (mock-aligned rgba) */
+  --badge-green-bg: rgba(5, 150, 105, 0.12);
+  --badge-green-border: rgba(5, 150, 105, 0.24);
+  --badge-cyan-bg: rgba(8, 145, 178, 0.12);
+  --badge-cyan-border: rgba(8, 145, 178, 0.24);
+  --badge-amber-bg: rgba(217, 119, 6, 0.13);
+  --badge-amber-border: rgba(217, 119, 6, 0.26);
+  --badge-blue-bg: rgba(37, 99, 235, 0.1);
+  --badge-blue-border: rgba(37, 99, 235, 0.22);
+  --badge-rose-bg: rgba(225, 29, 72, 0.1);
+  --badge-rose-border: rgba(225, 29, 72, 0.22);
+  --badge-violet-bg: rgba(124, 58, 237, 0.1);
+  --badge-violet-border: rgba(124, 58, 237, 0.22);
+
+  /* Hero chip */
+  --hero-chip-bg: rgba(255, 255, 255, 0.09);
+  --hero-chip-border: rgba(255, 255, 255, 0.16);
+
+  /* Accent strip (salience) */
+  --accent-strip-bg: rgba(8, 145, 178, 0.06);
+  --accent-strip-border: rgba(8, 145, 178, 0.2);
+
+  /* Signal card shadow */
+  --signal-card-shadow: 0 2px 6px rgba(var(--shadow-color), 0.04);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #161f31;
+  --surface-2: #1f2c42;
+  --surface-3: #2b3a54;
+  --ink: #f1f5f9;
+  --ink-secondary: #cbd5e1;
+  --muted: #93a3b8;
+  --line: #2b3a54;
+  --line-subtle: #1c2740;
+  --shadow-color: 0 0 0;
+  --shadow-op-md: 0.45;
+  --shadow-op-hi: 0.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]),
+  [data-theme="auto"] {
+    --bg: #0b1220;
+    --surface: #161f31;
+    --surface-2: #1f2c42;
+    --surface-3: #2b3a54;
+    --ink: #f1f5f9;
+    --ink-secondary: #cbd5e1;
+    --muted: #93a3b8;
+    --line: #2b3a54;
+    --line-subtle: #1c2740;
+    --shadow-color: 0 0 0;
+    --shadow-op-md: 0.45;
+    --shadow-op-hi: 0.6;
+  }
+}

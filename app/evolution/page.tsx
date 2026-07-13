@@ -33,9 +33,11 @@ export default function EvolutionPage() {
   if (!previous) {
     return (
       <AppShell title="Evolution" tagline="Month-over-month changes">
-        <div className="card">
-          <p>Only one edition exists so far. Evolution appears once a second edition is published.</p>
-        </div>
+        <section className="section">
+          <p className="text-[var(--muted)]">
+            Only one edition exists so far. Evolution appears once a second edition is published.
+          </p>
+        </section>
       </AppShell>
     );
   }

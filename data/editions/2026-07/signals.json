@@ -1,0 +1,452 @@
+[
+  {
+    "id": "signal-ai-generated-test-validation",
+    "title": "AI-generated test validation",
+    "summary": "Generated tests can increase speed but may produce false confidence if assertions are weak or intent is missing.",
+    "tags": [
+      "ai",
+      "mutation-testing"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.thoughtworks.com/radar/techniques/mutation-testing",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "watching",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-thoughtworks-mutation-testing"
+    ],
+    "type": "Trend",
+    "source_name": "Thoughtworks Technology Radar",
+    "impact": "Critical",
+    "urgency": "High",
+    "evidence": "Radar attention to mutation testing for weak suites.",
+    "recommended_action": "Experiment with mutation testing on one critical module.",
+    "suggested_owner": "QA Automation Engineer",
+    "board_state": "Worth Studying"
+  },
+  {
+    "id": "signal-playwright-trace-adoption",
+    "title": "Playwright trace adoption in CI",
+    "summary": "Trace artifacts shorten flaky test investigations when stored and linked from CI runs.",
+    "tags": [
+      "playwright",
+      "ci"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/docs/trace-viewer",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright"
+    ],
+    "type": "Tool",
+    "source_name": "Playwright",
+    "impact": "High",
+    "urgency": "Medium",
+    "evidence": "Official trace viewer documentation and CI integration patterns.",
+    "recommended_action": "Enable trace-on-first-retry for nightly regression.",
+    "suggested_owner": "SDET",
+    "board_state": "Adopt / Experiment"
+  },
+  {
+    "id": "signal-wcag-22-checklist-update",
+    "title": "WCAG 2.2 checklist update pending",
+    "summary": "Accessibility smoke checklist may need new focus and target-size criteria from WCAG 2.2.",
+    "tags": [
+      "accessibility"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-w3c-wai"
+    ],
+    "type": "Practice",
+    "source_name": "W3C WAI",
+    "impact": "High",
+    "urgency": "Medium",
+    "evidence": "WCAG 2.2 published criteria differ from 2.1 checklists.",
+    "recommended_action": "Review internal checklist against WCAG 2.2 new success criteria.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Under Review"
+  },
+  {
+    "id": "signal-k6-staging-load-gate",
+    "title": "k6 load gate for staging releases",
+    "summary": "Proposal to add k6 smoke load tests with SLO thresholds before major releases.",
+    "tags": [
+      "performance",
+      "k6"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://grafana.com/docs/k6/latest/",
+    "source_type": "documentation",
+    "confidence_level": "Vendor Claim",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-k6"
+    ],
+    "type": "Tool",
+    "source_name": "Grafana k6",
+    "impact": "Medium",
+    "urgency": "Low",
+    "evidence": "k6 docs describe threshold-based pass/fail in CI.",
+    "recommended_action": "Draft threshold script for top checkout API.",
+    "suggested_owner": "Performance Engineer",
+    "board_state": "New Signal"
+  },
+  {
+    "id": "signal-pact-contract-pilot",
+    "title": "Pact contract pilot for billing API",
+    "summary": "Billing service consumer team proposed a Pact contract to catch schema breaks pre-deploy.",
+    "tags": [
+      "contract-testing"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-pact"
+    ],
+    "type": "Practice",
+    "source_name": "Pact",
+    "impact": "High",
+    "urgency": "Medium",
+    "evidence": "Pact documentation on consumer-driven contracts.",
+    "recommended_action": "Schedule 2-week pilot with one consumer-provider pair.",
+    "suggested_owner": "SDET",
+    "board_state": "Under Review"
+  },
+  {
+    "id": "signal-no-code-vendor-claim",
+    "title": "No-code automation vendor demo claims",
+    "summary": "Vendor demo suggested full regression coverage without engineering effort; needs skeptical review.",
+    "tags": [
+      "hype",
+      "vendor"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Opinion / Commentary",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "type": "Tool",
+    "source_name": "Community discussion",
+    "impact": "Medium",
+    "urgency": "Low",
+    "evidence": "Community skepticism on no-code maintenance cost.",
+    "recommended_action": "Decline purchase until pilot evidence on maintainability.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Rejected / Hype"
+  },
+  {
+    "id": "signal-opentelemetry-prod-traces",
+    "title": "Production trace sampling for QA feedback",
+    "summary": "SRE team enabled trace sampling; QA should define which spans validate critical journeys.",
+    "tags": [
+      "observability"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://opentelemetry.io/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-cncf-opentelemetry"
+    ],
+    "type": "Trend",
+    "source_name": "OpenTelemetry",
+    "impact": "High",
+    "urgency": "Low",
+    "evidence": "OpenTelemetry spec and adoption in observability stacks.",
+    "recommended_action": "Document span requirements for five critical user flows.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Monitor"
+  },
+  {
+    "id": "signal-selenium-grid-sunset",
+    "title": "Legacy Selenium Grid maintenance burden",
+    "summary": "Old Selenium Grid cluster costs more to maintain than migrating critical flows to Playwright.",
+    "tags": [
+      "selenium",
+      "legacy"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.selenium.dev/documentation/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "archived",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-selenium"
+    ],
+    "type": "Tool",
+    "source_name": "Selenium",
+    "impact": "Low",
+    "urgency": "Low",
+    "evidence": "Team retrospective on grid flake rate and maintenance hours.",
+    "recommended_action": "Archive grid after Playwright migration milestone.",
+    "suggested_owner": "Engineering Manager",
+    "board_state": "Archived"
+  },
+  {
+    "id": "signal-ministry-conference-season",
+    "title": "Ministry of Testing conference season",
+    "summary": "MoT events offer workshops on AI testing and leadership; worth team attendance planning.",
+    "tags": [
+      "community",
+      "events"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/events",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "type": "Event",
+    "source_name": "Ministry of Testing",
+    "impact": "Medium",
+    "urgency": "Medium",
+    "evidence": "Official MoT events page lists upcoming conferences.",
+    "recommended_action": "Nominate two team members for MoT workshops.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Worth Studying"
+  },
+  {
+    "id": "signal-axe-ci-integration",
+    "title": "axe-core CI integration for design system",
+    "summary": "Design system team ready to add axe checks in Storybook CI pipeline.",
+    "tags": [
+      "accessibility",
+      "ci"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://github.com/dequelabs/axe-core",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-axe-core"
+    ],
+    "type": "Tool",
+    "source_name": "Deque axe-core",
+    "impact": "High",
+    "urgency": "High",
+    "evidence": "axe-core integrates with common test runners.",
+    "recommended_action": "Add axe to Storybook test job this sprint.",
+    "suggested_owner": "SDET",
+    "board_state": "Adopt / Experiment"
+  },
+  {
+    "id": "signal-dora-metrics-alignment",
+    "title": "DORA metrics alignment workshop",
+    "summary": "Engineering leadership asked QA to align flake rate reporting with DORA change failure rate.",
+    "tags": [
+      "metrics",
+      "dora"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://dora.dev/research/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-dora"
+    ],
+    "type": "Trend",
+    "source_name": "DORA",
+    "impact": "Medium",
+    "urgency": "Medium",
+    "evidence": "DORA research links stability metrics to delivery performance.",
+    "recommended_action": "Propose joint dashboard with devops for one product line.",
+    "suggested_owner": "QA Lead",
+    "board_state": "New Signal"
+  },
+  {
+    "id": "signal-owasp-zap-dast-pilot",
+    "title": "OWASP ZAP DAST scan in staging",
+    "summary": "Security team proposed weekly ZAP baseline scans; QA to triage findings vs test gaps.",
+    "tags": [
+      "security",
+      "dast"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.zaproxy.org/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-zap"
+    ],
+    "type": "Tool",
+    "source_name": "OWASP ZAP",
+    "impact": "Critical",
+    "urgency": "High",
+    "evidence": "OWASP ZAP docs on baseline scanning.",
+    "recommended_action": "Join security triage for first ZAP staging report.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Monitor"
+  },
+  {
+    "id": "signal-eu-ai-act-conformity-testing",
+    "title": "EU AI Act conformity testing backlog",
+    "summary": "Legal flagged potential high-risk classification; QA must define conformity tests, logging checks and human oversight scenarios.",
+    "tags": [
+      "standards",
+      "eu-ai-act",
+      "compliance"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "watching",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-eu-ai-act"
+    ],
+    "type": "Trend",
+    "source_name": "EU AI Act",
+    "impact": "Critical",
+    "urgency": "High",
+    "evidence": "Regulation Articles 9–15 require risk management, data governance, logging and oversight.",
+    "recommended_action": "Schedule gap workshop with legal; draft conformity test checklist.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Under Review"
+  },
+  {
+    "id": "signal-llm-codegen-validation-gate",
+    "title": "LLM codegen validation gate proposal",
+    "summary": "Engineering proposes mandatory mutation testing and security scan on AI-generated test and production code before merge.",
+    "tags": [
+      "standards",
+      "codegen",
+      "owasp-llm"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-llm-top10",
+      "source-nist-ssdf"
+    ],
+    "type": "Practice",
+    "source_name": "OWASP LLM Top 10",
+    "impact": "High",
+    "urgency": "High",
+    "evidence": "OWASP LLM risks LLM02/05 and NIST SSDF PO.4 require output validation and review.",
+    "recommended_action": "Pilot gate on one repo: SAST + mutation score on AI-tagged PRs.",
+    "suggested_owner": "SDET",
+    "board_state": "Worth Studying"
+  },
+  {
+    "id": "signal-nist-ai-rmf-qa-adoption",
+    "title": "NIST AI RMF adoption in QA program",
+    "summary": "Enterprise architecture asked QA to map existing regression and eval harnesses to NIST AI RMF Measure and Manage functions.",
+    "tags": [
+      "standards",
+      "nist",
+      "ai-rmf"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-nist-ai-rmf"
+    ],
+    "type": "Trend",
+    "source_name": "NIST AI RMF",
+    "impact": "High",
+    "urgency": "Medium",
+    "evidence": "NIST AI RMF 1.0 Core functions and Playbook cite continuous evaluation and monitoring.",
+    "recommended_action": "Produce RMF-to-test mapping spreadsheet for leadership review.",
+    "suggested_owner": "QA Lead",
+    "board_state": "New Signal"
+  },
+  {
+    "id": "signal-iso-42001-audit-prep",
+    "title": "ISO 42001 audit prep for QA evidence",
+    "summary": "Certification project needs QA to link CI artifacts, AI test policy and role assignments to ISO 42001 controls.",
+    "tags": [
+      "standards",
+      "iso-42001",
+      "audit"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/81230.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-42001"
+    ],
+    "type": "Practice",
+    "source_name": "ISO/IEC 42001",
+    "impact": "Medium",
+    "urgency": "Medium",
+    "evidence": "ISO 42001 requires documented operation controls and evidence of effectiveness.",
+    "recommended_action": "Inventory test artifacts against Annex A control themes.",
+    "suggested_owner": "QA Lead",
+    "board_state": "Monitor"
+  }
+]

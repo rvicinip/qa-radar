@@ -1,0 +1,356 @@
+[
+  {
+    "id": "ministry-of-testing",
+    "title": "Ministry of Testing",
+    "summary": "Global software testing community with events, newsletter and learning resources.",
+    "tags": [
+      "community"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Ministry of Testing",
+    "type": "Community",
+    "platform": [
+      "Website",
+      "Newsletter"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "main_utility": "Learning, events and professional networking.",
+    "frequent_topics": [
+      "quality engineering",
+      "AI",
+      "leadership"
+    ],
+    "update_frequency": "Weekly",
+    "recent_activity_signal": "Active events and newsletter.",
+    "editorial_note": "Broad active testing community."
+  },
+  {
+    "id": "istqb",
+    "title": "ISTQB",
+    "summary": "Global software testing certification organization and syllabus publisher.",
+    "tags": [
+      "certification"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.istqb.org/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-istqb"
+    ],
+    "name": "ISTQB",
+    "type": "Organization",
+    "platform": [
+      "Website"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "main_utility": "Certification structure and shared terminology.",
+    "frequent_topics": [
+      "certification",
+      "foundations"
+    ],
+    "update_frequency": "Event-based",
+    "recent_activity_signal": "Official syllabus ecosystem.",
+    "editorial_note": "Formal reference, not sole proof of skill."
+  },
+  {
+    "id": "testinguy",
+    "title": "TestingUy",
+    "summary": "LATAM software testing community with events and conference activity.",
+    "tags": [
+      "latam"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testinguy.org/",
+    "source_type": "community",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-testinguy"
+    ],
+    "name": "TestingUy",
+    "type": "Community",
+    "platform": [
+      "Website",
+      "Meetup"
+    ],
+    "primary_language": "Spanish",
+    "region": "LATAM",
+    "recommended_level": [
+      "Beginner",
+      "Advanced"
+    ],
+    "main_utility": "LATAM QA networking.",
+    "frequent_topics": [
+      "automation",
+      "community"
+    ],
+    "update_frequency": "Event-based",
+    "recent_activity_signal": "Regional conference activity.",
+    "editorial_note": "Relevant for Spanish-speaking QA professionals."
+  },
+  {
+    "id": "test-automation-university",
+    "title": "Test Automation University",
+    "summary": "Free online courses on test automation topics from Applitools.",
+    "tags": [
+      "learning"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testautomationu.applitools.com/",
+    "source_type": "community",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-test-automation-u"
+    ],
+    "name": "Test Automation University",
+    "type": "Learning platform",
+    "platform": [
+      "Website"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "main_utility": "Structured free automation courses.",
+    "frequent_topics": [
+      "selenium",
+      "cypress",
+      "api"
+    ],
+    "update_frequency": "Monthly",
+    "recent_activity_signal": "Regular new course releases.",
+    "editorial_note": "Good starting point for automation upskilling."
+  },
+  {
+    "id": "software-testing-weekly-community",
+    "title": "Software Testing Weekly readers",
+    "summary": "Newsletter community curating QA articles, tools and conference links each week.",
+    "tags": [
+      "newsletter"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://softwaretestingweekly.com/",
+    "source_type": "news",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-software-testing-weekly"
+    ],
+    "name": "Software Testing Weekly",
+    "type": "Newsletter",
+    "platform": [
+      "Email",
+      "Website"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "main_utility": "Curated industry scan.",
+    "frequent_topics": [
+      "tools",
+      "AI",
+      "career"
+    ],
+    "update_frequency": "Weekly",
+    "recent_activity_signal": "Weekly issues published.",
+    "editorial_note": "Low-effort way to stay current."
+  },
+  {
+    "id": "webaim-community",
+    "title": "WebAIM",
+    "summary": "Accessibility research, training and community resources from Utah State University.",
+    "tags": [
+      "accessibility"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://webaim.org/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-webaim"
+    ],
+    "name": "WebAIM",
+    "type": "Organization",
+    "platform": [
+      "Website",
+      "Training"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "main_utility": "Accessibility education and articles.",
+    "frequent_topics": [
+      "wcag",
+      "screen readers"
+    ],
+    "update_frequency": "Monthly",
+    "recent_activity_signal": "Regular articles and surveys.",
+    "editorial_note": "Trusted accessibility reference."
+  },
+  {
+    "id": "google-testing-blog-readers",
+    "title": "Google Testing Blog community",
+    "summary": "Practitioners follow Google testing blog for large-scale QA engineering patterns.",
+    "tags": [
+      "engineering"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testing.googleblog.com/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-google-testing-blog"
+    ],
+    "name": "Google Testing Blog",
+    "type": "Publication",
+    "platform": [
+      "Blog"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Advanced",
+      "Leadership"
+    ],
+    "main_utility": "Large-scale testing practices.",
+    "frequent_topics": [
+      "flaky tests",
+      "infrastructure"
+    ],
+    "update_frequency": "Monthly",
+    "recent_activity_signal": "Periodic deep-dive posts.",
+    "editorial_note": "High-quality but Google-scale context."
+  },
+  {
+    "id": "owasp-security-chapter",
+    "title": "OWASP community",
+    "summary": "Open global community maintaining security guides including WSTG and ZAP.",
+    "tags": [
+      "security"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-wstg",
+      "source-owasp-zap"
+    ],
+    "name": "OWASP",
+    "type": "Foundation",
+    "platform": [
+      "Website",
+      "Chapters"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "main_utility": "Security testing standards and tools.",
+    "frequent_topics": [
+      "WSTG",
+      "ZAP",
+      "ASVS"
+    ],
+    "update_frequency": "Continuous",
+    "recent_activity_signal": "Active project updates.",
+    "editorial_note": "Essential for security-aware QA."
+  },
+  {
+    "id": "pact-foundation-community",
+    "title": "Pact Foundation community",
+    "summary": "Open-source contract testing community around Pact and Pact Broker.",
+    "tags": [
+      "contract-testing"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-pact"
+    ],
+    "name": "Pact community",
+    "type": "Open source",
+    "platform": [
+      "GitHub",
+      "Slack"
+    ],
+    "primary_language": "English",
+    "region": "Global",
+    "recommended_level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "main_utility": "Contract testing support and examples.",
+    "frequent_topics": [
+      "microservices",
+      "CI"
+    ],
+    "update_frequency": "Continuous",
+    "recent_activity_signal": "Active docs and broker releases.",
+    "editorial_note": "Best for teams adopting contract tests."
+  }
+]

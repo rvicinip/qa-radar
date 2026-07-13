@@ -1,0 +1,223 @@
+[
+  {
+    "id": "motacon-2026",
+    "title": "MoTaCon 2026",
+    "summary": "Community testing conference by Ministry of Testing.",
+    "tags": [
+      "event"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/events",
+    "source_type": "community",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "MoTaCon 2026",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-01",
+    "mode": "Online",
+    "location": "Online",
+    "organizer": "Ministry of Testing",
+    "topics": [
+      "software testing",
+      "community"
+    ],
+    "relevance_for_qa": "Modern testing practice and peer learning."
+  },
+  {
+    "id": "testinguy-2026",
+    "title": "TestingUy Conference 2026",
+    "summary": "LATAM testing conference with Spanish-language talks and workshops.",
+    "tags": [
+      "latam",
+      "event"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testinguy.org/",
+    "source_type": "community",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-testinguy"
+    ],
+    "name": "TestingUy Conference 2026",
+    "start_date": "2026-08-15",
+    "end_date": "2026-08-16",
+    "mode": "Hybrid",
+    "location": "Montevideo, Uruguay",
+    "organizer": "TestingUy",
+    "topics": [
+      "automation",
+      "quality",
+      "community"
+    ],
+    "relevance_for_qa": "Regional networking and practical automation content."
+  },
+  {
+    "id": "eurostar-2026",
+    "title": "EuroSTAR Conference 2026",
+    "summary": "Europe's major software testing conference with practitioner-led sessions.",
+    "tags": [
+      "conference"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://eurostarsoftwaretesting.com/",
+    "source_type": "community",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-eurostar"
+    ],
+    "name": "EuroSTAR Conference 2026",
+    "start_date": "2026-11-10",
+    "end_date": "2026-11-13",
+    "mode": "In-person",
+    "location": "Copenhagen, Denmark",
+    "organizer": "EuroSTAR",
+    "topics": [
+      "quality engineering",
+      "leadership",
+      "automation"
+    ],
+    "relevance_for_qa": "Strategy and advanced testing topics from global speakers."
+  },
+  {
+    "id": "test-automation-u-summit",
+    "title": "Test Automation U Summit",
+    "summary": "Free virtual summit from Test Automation University with automation deep dives.",
+    "tags": [
+      "learning",
+      "virtual"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testautomationu.applitools.com/",
+    "source_type": "community",
+    "confidence_level": "Vendor Claim",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-test-automation-u"
+    ],
+    "name": "Test Automation U Summit",
+    "start_date": "2026-04-20",
+    "end_date": "2026-04-22",
+    "mode": "Online",
+    "location": "Online",
+    "organizer": "Applitools / Test Automation U",
+    "topics": [
+      "automation",
+      "CI",
+      "tools"
+    ],
+    "relevance_for_qa": "Free upskilling on automation frameworks."
+  },
+  {
+    "id": "agile-testing-days-2025",
+    "title": "Agile Testing Days 2025",
+    "summary": "Annual agile and testing conference in Potsdam focused on whole-team quality.",
+    "tags": [
+      "agile",
+      "conference"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://agiletestingdays.com/",
+    "source_type": "community",
+    "confidence_level": "News Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Agile Testing Days 2025",
+    "start_date": "2025-11-24",
+    "end_date": "2025-11-28",
+    "mode": "In-person",
+    "location": "Potsdam, Germany",
+    "organizer": "Software Test Consulting",
+    "topics": [
+      "agile",
+      "exploratory",
+      "automation"
+    ],
+    "relevance_for_qa": "Whole-team quality and agile testing practices."
+  },
+  {
+    "id": "selenium-conf-2025",
+    "title": "SeleniumConf 2025",
+    "summary": "Community conference for Selenium and browser automation practitioners.",
+    "tags": [
+      "selenium",
+      "conference"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://seleniumconf.com/",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-selenium"
+    ],
+    "name": "SeleniumConf 2025",
+    "start_date": "2025-10-08",
+    "end_date": "2025-10-09",
+    "mode": "Hybrid",
+    "location": "Online / TBD",
+    "organizer": "Selenium community",
+    "topics": [
+      "selenium",
+      "grid",
+      "automation"
+    ],
+    "relevance_for_qa": "Legacy and modern browser automation patterns."
+  },
+  {
+    "id": "webaim-accessibility-training",
+    "title": "WebAIM Accessibility Training",
+    "summary": "WebAIM offers periodic accessibility training workshops for QA and dev teams.",
+    "tags": [
+      "accessibility",
+      "training"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://webaim.org/training/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-webaim"
+    ],
+    "name": "WebAIM Accessibility Training",
+    "start_date": "2026-07-14",
+    "end_date": "2026-07-15",
+    "mode": "Online",
+    "location": "Online",
+    "organizer": "WebAIM",
+    "topics": [
+      "wcag",
+      "testing",
+      "remediation"
+    ],
+    "relevance_for_qa": "Hands-on accessibility testing skills for QA."
+  }
+]

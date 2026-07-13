@@ -1,0 +1,1100 @@
+[
+  {
+    "id": "evidence-based-release-quality-gate",
+    "title": "Evidence-Based Release Quality Gate",
+    "summary": "A release decision process that requires visible evidence instead of intuition or incomplete reports.",
+    "tags": [
+      "release"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://allurereport.org/docs/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-allure-report"
+    ],
+    "name": "Evidence-Based Release Quality Gate",
+    "category": "CI/CD quality gates",
+    "problem_solved": "Release decisions without sufficient evidence.",
+    "when_to_use": [
+      "High-risk releases",
+      "Regression cycles"
+    ],
+    "when_not_to_use": [
+      "Low-risk copy with rollback"
+    ],
+    "recommended_steps": [
+      "Map risk",
+      "Run tests",
+      "Collect evidence",
+      "Record GO/NO-GO"
+    ],
+    "expected_evidence": [
+      "CI run",
+      "Allure report",
+      "Trace"
+    ],
+    "useful_metrics": [
+      "pass rate",
+      "flaky rate"
+    ],
+    "common_risks": [
+      "Bureaucracy"
+    ],
+    "practical_example": "GO only when critical flows have passing evidence and linked artifacts."
+  },
+  {
+    "id": "accessibility-smoke-gate",
+    "title": "Accessibility Smoke Gate",
+    "summary": "Lightweight accessibility review integrated into regular QA instead of a final audit.",
+    "tags": [
+      "accessibility"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.w3.org/TR/WCAG22/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-wcag-22"
+    ],
+    "name": "Accessibility Smoke Gate",
+    "category": "Accessibility testing",
+    "problem_solved": "Accessibility defects found too late.",
+    "when_to_use": [
+      "New UI pages",
+      "Major UI changes"
+    ],
+    "when_not_to_use": [
+      "Back-end only changes"
+    ],
+    "recommended_steps": [
+      "Run automated checks",
+      "Test keyboard",
+      "Review contrast"
+    ],
+    "expected_evidence": [
+      "axe report",
+      "Keyboard notes"
+    ],
+    "useful_metrics": [
+      "critical violations"
+    ],
+    "common_risks": [
+      "Automation-only mindset"
+    ],
+    "practical_example": "Critical flows must be keyboard-navigable before release."
+  },
+  {
+    "id": "page-object-governance",
+    "title": "Page Object Model governance",
+    "summary": "Centralize selectors and actions in page objects to reduce flaky inline locators in specs.",
+    "tags": [
+      "pom",
+      "maintainability"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/docs/pom",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright"
+    ],
+    "name": "Page Object Model governance",
+    "category": "Test automation design",
+    "problem_solved": "Duplicated selectors and brittle specs.",
+    "when_to_use": [
+      "E2E automation at scale"
+    ],
+    "when_not_to_use": [
+      "One-off spike scripts"
+    ],
+    "recommended_steps": [
+      "One POM per page",
+      "No selectors in specs",
+      "Review in PR"
+    ],
+    "expected_evidence": [
+      "POM files",
+      "Spec diffs without locators"
+    ],
+    "useful_metrics": [
+      "locator duplication count"
+    ],
+    "common_risks": [
+      "God objects"
+    ],
+    "practical_example": "All login flow actions live in LoginPage; specs call methods only."
+  },
+  {
+    "id": "flaky-quarantine-policy",
+    "title": "Flaky test quarantine policy",
+    "summary": "Quarantine flaky tests with tickets and deadlines instead of silent retries.",
+    "tags": [
+      "flaky",
+      "ci"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://testing.googleblog.com/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-google-testing-blog"
+    ],
+    "name": "Flaky test quarantine policy",
+    "category": "CI/CD quality gates",
+    "problem_solved": "CI noise erodes trust in test results.",
+    "when_to_use": [
+      "Flake rate above team threshold"
+    ],
+    "when_not_to_use": [
+      "Known env outage"
+    ],
+    "recommended_steps": [
+      "Detect flake",
+      "Quarantine",
+      "Assign owner",
+      "Fix or delete"
+    ],
+    "expected_evidence": [
+      "Quarantine list",
+      "Fix PR"
+    ],
+    "useful_metrics": [
+      "flake rate",
+      "quarantine age"
+    ],
+    "common_risks": [
+      "Permanent quarantine"
+    ],
+    "practical_example": "Tests quarantined over 14 days escalate to engineering manager."
+  },
+  {
+    "id": "risk-based-test-selection",
+    "title": "Risk-based test selection",
+    "summary": "Prioritize tests by business risk and change impact instead of running everything always.",
+    "tags": [
+      "risk",
+      "strategy"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Risk-based test selection",
+    "category": "Test strategy",
+    "problem_solved": "Long feedback loops from full suite runs.",
+    "when_to_use": [
+      "Large suites",
+      "Frequent deploys"
+    ],
+    "when_not_to_use": [
+      "Pre-release full regression"
+    ],
+    "recommended_steps": [
+      "Map risks",
+      "Tag tests",
+      "Select by change"
+    ],
+    "expected_evidence": [
+      "Risk map",
+      "Selected run report"
+    ],
+    "useful_metrics": [
+      "time to feedback"
+    ],
+    "common_risks": [
+      "Missing low-frequency critical paths"
+    ],
+    "practical_example": "Payment changes trigger payment + auth suites only on PR."
+  },
+  {
+    "id": "contract-test-ci-gate",
+    "title": "Contract test CI gate",
+    "summary": "Run Pact or schema contract tests before deploying services that share APIs.",
+    "tags": [
+      "contract-testing"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-pact"
+    ],
+    "name": "Contract test CI gate",
+    "category": "API testing",
+    "problem_solved": "Integration failures discovered late.",
+    "when_to_use": [
+      "Microservices with shared APIs"
+    ],
+    "when_not_to_use": [
+      "Monolith with shared DB only"
+    ],
+    "recommended_steps": [
+      "Define contracts",
+      "Verify in CI",
+      "Publish to broker"
+    ],
+    "expected_evidence": [
+      "Pact verification logs"
+    ],
+    "useful_metrics": [
+      "contract break count"
+    ],
+    "common_risks": [
+      "Stale contracts"
+    ],
+    "practical_example": "Provider build fails if consumer contract verification fails."
+  },
+  {
+    "id": "security-smoke-wstg",
+    "title": "Security smoke using OWASP WSTG",
+    "summary": "Rotate a small set of OWASP WSTG checks aligned to your threat model each sprint.",
+    "tags": [
+      "security"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-wstg"
+    ],
+    "name": "Security smoke using OWASP WSTG",
+    "category": "Security testing",
+    "problem_solved": "Security gaps found only in annual audits.",
+    "when_to_use": [
+      "Web apps with auth and payments"
+    ],
+    "when_not_to_use": [
+      "Internal tools with no sensitive data"
+    ],
+    "recommended_steps": [
+      "Pick 5 WSTG tests",
+      "Run in staging",
+      "Triage with security"
+    ],
+    "expected_evidence": [
+      "Scan notes",
+      "Jira security tickets"
+    ],
+    "useful_metrics": [
+      "open critical findings"
+    ],
+    "common_risks": [
+      "QA overstepping scope"
+    ],
+    "practical_example": "Quarterly rotation covers auth, session, and input validation chapters."
+  },
+  {
+    "id": "exploratory-charter-sessions",
+    "title": "Exploratory charter sessions",
+    "summary": "Time-boxed exploratory sessions with charters produce documented findings.",
+    "tags": [
+      "exploratory"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.ministryoftesting.com/",
+    "source_type": "community",
+    "confidence_level": "Community Signal",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "name": "Exploratory charter sessions",
+    "category": "Manual testing",
+    "problem_solved": "Ad-hoc testing without traceability.",
+    "when_to_use": [
+      "New features",
+      "Risk areas"
+    ],
+    "when_not_to_use": [
+      "Fully scripted compliance runs"
+    ],
+    "recommended_steps": [
+      "Write charter",
+      "Time-box",
+      "Debrief notes"
+    ],
+    "expected_evidence": [
+      "Session notes",
+      "Bug tickets"
+    ],
+    "useful_metrics": [
+      "issues per hour"
+    ],
+    "common_risks": [
+      "No follow-up"
+    ],
+    "practical_example": "90-minute charter on checkout edge cases with shared notes template."
+  },
+  {
+    "id": "api-schema-validation",
+    "title": "API schema validation in CI",
+    "summary": "Validate API responses against OpenAPI or JSON Schema in every CI run.",
+    "tags": [
+      "api",
+      "schema"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://learning.postman.com/docs/tests-and-scripts/test-apis/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-postman"
+    ],
+    "name": "API schema validation in CI",
+    "category": "API testing",
+    "problem_solved": "Silent API response shape breaks.",
+    "when_to_use": [
+      "REST APIs with published schemas"
+    ],
+    "when_not_to_use": [
+      "Undocumented legacy APIs"
+    ],
+    "recommended_steps": [
+      "Pin schema",
+      "Assert in tests",
+      "Fail CI on drift"
+    ],
+    "expected_evidence": [
+      "Schema test logs"
+    ],
+    "useful_metrics": [
+      "schema failures caught pre-merge"
+    ],
+    "common_risks": [
+      "Over-strict schemas"
+    ],
+    "practical_example": "Postman tests assert 200 responses match OpenAPI components."
+  },
+  {
+    "id": "iso-42001-ai-management-qa-gate",
+    "title": "ISO/IEC 42001 — AI management checkpoints for QA",
+    "summary": "Map QA activities to an AI management system: documented test policy, roles, continual improvement and evidence for audits.",
+    "tags": [
+      "standards",
+      "ai-governance",
+      "iso-42001"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/81230.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-42001"
+    ],
+    "name": "ISO/IEC 42001 — AI management checkpoints for QA",
+    "category": "AI governance & standards",
+    "problem_solved": "AI testing work lacks traceable governance and audit evidence.",
+    "when_to_use": [
+      "Teams adopting AI in SDLC",
+      "Preparing ISO 42001 certification"
+    ],
+    "when_not_to_use": [
+      "No AI components in product or toolchain"
+    ],
+    "recommended_steps": [
+      "Define AI test policy scope",
+      "Assign QA roles in AI MS",
+      "Link test evidence to controls",
+      "Review in management audit"
+    ],
+    "expected_evidence": [
+      "AI test policy",
+      "Role matrix",
+      "Audit trail of test runs"
+    ],
+    "useful_metrics": [
+      "control coverage",
+      "open nonconformities"
+    ],
+    "common_risks": [
+      "Checkbox compliance without real tests"
+    ],
+    "practical_example": "QA lead maps regression gates to ISO 42001 Clause 8 operation controls with linked CI artifacts."
+  },
+  {
+    "id": "iso-23894-ai-risk-test-planning",
+    "title": "ISO/IEC 23894 — AI risk-driven test planning",
+    "summary": "Use AI risk assessment outputs to prioritize test depth, data quality checks and human oversight scenarios.",
+    "tags": [
+      "standards",
+      "risk",
+      "iso-23894"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/77304.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-23894"
+    ],
+    "name": "ISO/IEC 23894 — AI risk-driven test planning",
+    "category": "AI governance & standards",
+    "problem_solved": "Test effort not aligned to AI-specific harm and failure modes.",
+    "when_to_use": [
+      "ML/LLM features in production",
+      "High-impact decision support"
+    ],
+    "when_not_to_use": [
+      "Deterministic logic with no AI"
+    ],
+    "recommended_steps": [
+      "Ingest risk register",
+      "Map risks to test types",
+      "Define residual risk acceptance",
+      "Re-test after model change"
+    ],
+    "expected_evidence": [
+      "Risk-to-test trace matrix",
+      "Signed risk acceptance"
+    ],
+    "useful_metrics": [
+      "high-risk scenarios covered",
+      "open risk items"
+    ],
+    "common_risks": [
+      "Risk register stale vs deployed model"
+    ],
+    "practical_example": "Bias and hallucination risks drive dedicated exploratory charters before each model version release."
+  },
+  {
+    "id": "iso-5338-ai-lifecycle-test-gates",
+    "title": "ISO/IEC 5338 — AI lifecycle test gates",
+    "summary": "Place verification and validation gates at AI lifecycle transitions: data prep, training, deployment, monitoring and retirement.",
+    "tags": [
+      "standards",
+      "sdlc",
+      "iso-5338"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/74438.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-5338"
+    ],
+    "name": "ISO/IEC 5338 — AI lifecycle test gates",
+    "category": "AI governance & standards",
+    "problem_solved": "Testing only at release misses data and model-stage defects.",
+    "when_to_use": [
+      "MLOps pipelines",
+      "Frequent model retraining"
+    ],
+    "when_not_to_use": [
+      "Static third-party model API with no retrain"
+    ],
+    "recommended_steps": [
+      "Define gate per lifecycle stage",
+      "Automate data validation",
+      "Regression on model promotion",
+      "Monitor drift triggers re-test"
+    ],
+    "expected_evidence": [
+      "Stage gate checklist",
+      "Promotion sign-off logs"
+    ],
+    "useful_metrics": [
+      "failed promotions",
+      "drift alerts tested"
+    ],
+    "common_risks": [
+      "Gates bypassed under release pressure"
+    ],
+    "practical_example": "Staging promotion blocked until golden-set accuracy and safety prompts pass automated suite."
+  },
+  {
+    "id": "iso-25010-25059-ai-quality-model",
+    "title": "ISO/IEC 25010 & 25059 — Quality model for AI testing",
+    "summary": "Evaluate AI features using SQuaRE characteristics plus AI-specific quality: functional correctness, robustness, explainability and data quality.",
+    "tags": [
+      "standards",
+      "quality",
+      "iso-25059"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/78176.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-25010",
+      "source-iso-25059"
+    ],
+    "name": "ISO/IEC 25010 & 25059 — Quality model for AI testing",
+    "category": "AI governance & standards",
+    "problem_solved": "Teams test AI like ordinary software without AI quality dimensions.",
+    "when_to_use": [
+      "Defining AI acceptance criteria",
+      "RFP or audit quality sections"
+    ],
+    "when_not_to_use": [
+      "Pure CRUD with no AI"
+    ],
+    "recommended_steps": [
+      "Pick relevant characteristics",
+      "Define measurable thresholds",
+      "Build test cases per characteristic",
+      "Report in release evidence"
+    ],
+    "expected_evidence": [
+      "Quality characteristic matrix",
+      "Threshold reports"
+    ],
+    "useful_metrics": [
+      "characteristic pass rate",
+      "robustness score"
+    ],
+    "common_risks": [
+      "Unmeasurable 'explainability' claims"
+    ],
+    "practical_example": "Release pack includes robustness tests for prompt injection and functional accuracy on golden queries."
+  },
+  {
+    "id": "iso-29119-test-documentation",
+    "title": "ISO/IEC/IEEE 29119 — Test documentation alignment",
+    "summary": "Structure test policies, plans, cases and reports per ISO 29119 so AI-assisted and manual testing stay auditable.",
+    "tags": [
+      "standards",
+      "documentation",
+      "iso-29119"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/63712.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-29119"
+    ],
+    "name": "ISO/IEC/IEEE 29119 — Test documentation alignment",
+    "category": "AI governance & standards",
+    "problem_solved": "Fragmented test artifacts fail compliance and handoff reviews.",
+    "when_to_use": [
+      "Regulated industries",
+      "Large distributed QA teams"
+    ],
+    "when_not_to_use": [
+      "Tiny startup with minimal process overhead"
+    ],
+    "recommended_steps": [
+      "Adopt 29119 templates",
+      "Version test plans per release",
+      "Link cases to requirements",
+      "Archive completion reports"
+    ],
+    "expected_evidence": [
+      "Test plan",
+      "Case repository",
+      "Completion report"
+    ],
+    "useful_metrics": [
+      "requirement coverage",
+      "defect density"
+    ],
+    "common_risks": [
+      "Template bureaucracy without value"
+    ],
+    "practical_example": "Sprint test plan references EU AI Act annex items and links Playwright run IDs as completion evidence."
+  },
+  {
+    "id": "iso-33001-process-maturity-qa",
+    "title": "ISO/IEC 33001 & 33020 — QA process maturity assessment",
+    "summary": "Assess testing process capability to find gaps before scaling AI codegen or automation investments.",
+    "tags": [
+      "standards",
+      "process",
+      "iso-33001"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.iso.org/standard/54178.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-iso-33001"
+    ],
+    "name": "ISO/IEC 33001 & 33020 — QA process maturity assessment",
+    "category": "AI governance & standards",
+    "problem_solved": "Tool adoption outpaces process maturity and yields flaky ROI.",
+    "when_to_use": [
+      "QA transformation",
+      "Pre-AI toolchain rollout"
+    ],
+    "when_not_to_use": [
+      "One-off project with fixed scope"
+    ],
+    "recommended_steps": [
+      "Select process areas",
+      "Run lightweight assessment",
+      "Prioritize improvement backlog",
+      "Re-assess annually"
+    ],
+    "expected_evidence": [
+      "Assessment report",
+      "Improvement roadmap"
+    ],
+    "useful_metrics": [
+      "process attribute ratings",
+      "improvement velocity"
+    ],
+    "common_risks": [
+      "Assessment as one-time checkbox"
+    ],
+    "practical_example": "Test design process rated before mandating org-wide Copilot-generated unit tests."
+  },
+  {
+    "id": "nist-ai-rmf-qa-mapping",
+    "title": "NIST AI RMF — Map QA to Govern/Map/Measure/Manage",
+    "summary": "Align QA workflows with NIST AI RMF functions: govern test policy, map risks, measure model behavior, manage incidents.",
+    "tags": [
+      "standards",
+      "nist",
+      "ai-rmf"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-nist-ai-rmf"
+    ],
+    "name": "NIST AI RMF — Map QA to Govern/Map/Measure/Manage",
+    "category": "AI governance & standards",
+    "problem_solved": "QA teams lack a shared vocabulary for AI risk controls with engineering.",
+    "when_to_use": [
+      "US-market AI products",
+      "Enterprise AI governance programs"
+    ],
+    "when_not_to_use": [
+      "No AI in scope"
+    ],
+    "recommended_steps": [
+      "Workshop RMF functions with QA",
+      "Map existing tests to categories",
+      "Fill measurement gaps",
+      "Define incident test playbooks"
+    ],
+    "expected_evidence": [
+      "RMF mapping spreadsheet",
+      "Measurement dashboards"
+    ],
+    "useful_metrics": [
+      "category coverage",
+      "incident drill frequency"
+    ],
+    "common_risks": [
+      "Mapping exercise without operational tests"
+    ],
+    "practical_example": "Measure function includes weekly eval harness scores; Manage includes rollback test after model incident."
+  },
+  {
+    "id": "nist-ssdf-ai-codegen-security",
+    "title": "NIST SSDF — Secure SDLC for AI-generated code",
+    "summary": "Apply SSDF practices to AI-assisted development: threat modeling, code review, SAST, dependency checks and provenance.",
+    "tags": [
+      "standards",
+      "security",
+      "nist-ssdf"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://csrc.nist.gov/Projects/ssdf",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-nist-ssdf"
+    ],
+    "name": "NIST SSDF — Secure SDLC for AI-generated code",
+    "category": "AI governance & standards",
+    "problem_solved": "LLM-generated code merges without security verification.",
+    "when_to_use": [
+      "Copilot/Cursor/LLM codegen in team workflow"
+    ],
+    "when_not_to_use": [
+      "No generated code in merge path"
+    ],
+    "recommended_steps": [
+      "Mark AI-generated PRs",
+      "Mandatory security review",
+      "Run SAST and secret scan",
+      "Block known-vuln dependencies"
+    ],
+    "expected_evidence": [
+      "SAST reports",
+      "Review sign-off",
+      "SBOM snapshot"
+    ],
+    "useful_metrics": [
+      "AI PR security findings",
+      "time to remediate"
+    ],
+    "common_risks": [
+      "Rubber-stamp review on generated volume"
+    ],
+    "practical_example": "CI fails AI-tagged PRs missing OWASP ASVS L1 checks on auth changes."
+  },
+  {
+    "id": "eu-ai-act-high-risk-testing",
+    "title": "EU AI Act — High-risk AI testing & documentation",
+    "summary": "For high-risk AI systems, plan conformity tests, technical documentation, logging, human oversight and post-market monitoring evidence.",
+    "tags": [
+      "standards",
+      "regulation",
+      "eu-ai-act"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-eu-ai-act"
+    ],
+    "name": "EU AI Act — High-risk AI testing & documentation",
+    "category": "AI governance & standards",
+    "problem_solved": "EU deployments lack test evidence required for high-risk AI conformity.",
+    "when_to_use": [
+      "EU market AI products",
+      "Annex III high-risk categories"
+    ],
+    "when_not_to_use": [
+      "Out of scope minimal-risk AI"
+    ],
+    "recommended_steps": [
+      "Classify system risk tier",
+      "Build technical doc pack",
+      "Test accuracy and robustness",
+      "Validate human oversight UX",
+      "Plan post-market monitoring"
+    ],
+    "expected_evidence": [
+      "Conformity test report",
+      "Logging audit",
+      "Oversight test notes"
+    ],
+    "useful_metrics": [
+      "conformity gaps",
+      "oversight override rate"
+    ],
+    "common_risks": [
+      "Misclassification to avoid obligations"
+    ],
+    "practical_example": "HR screening AI includes bias test suite, override workflow test and immutable inference logs."
+  },
+  {
+    "id": "owasp-llm-top10-codegen-testing",
+    "title": "OWASP LLM Top 10 — Security testing for codegen tools",
+    "summary": "Test LLM-integrated apps and codegen pipelines against OWASP LLM risks: prompt injection, insecure output, supply chain and data leakage.",
+    "tags": [
+      "standards",
+      "security",
+      "owasp-llm"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-llm-top10"
+    ],
+    "name": "OWASP LLM Top 10 — Security testing for codegen tools",
+    "category": "AI governance & standards",
+    "problem_solved": "LLM features ship without adversarial and output-validation tests.",
+    "when_to_use": [
+      "In-app LLM chat",
+      "Codegen assistants in CI"
+    ],
+    "when_not_to_use": [
+      "Offline non-LLM tooling"
+    ],
+    "recommended_steps": [
+      "Threat model per LLM Top 10",
+      "Red-team prompt injection",
+      "Sanitize model output in tests",
+      "Scan plugins and training data paths"
+    ],
+    "expected_evidence": [
+      "Top 10 coverage matrix",
+      "Red-team findings"
+    ],
+    "useful_metrics": [
+      "open LLM vulns",
+      "blocked injection cases"
+    ],
+    "common_risks": [
+      "Testing only happy-path prompts"
+    ],
+    "practical_example": "Codegen bot test suite includes indirect prompt injection via issue comments and unsafe code suggestion blocks."
+  },
+  {
+    "id": "owasp-asvs-security-verification",
+    "title": "OWASP ASVS — Security verification baseline",
+    "summary": "Use ASVS levels as a structured security test backlog complementary to functional QA and WSTG execution.",
+    "tags": [
+      "standards",
+      "security",
+      "owasp-asvs"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-asvs"
+    ],
+    "name": "OWASP ASVS — Security verification baseline",
+    "category": "AI governance & standards",
+    "problem_solved": "Security expectations undefined for QA-security handoff.",
+    "when_to_use": [
+      "Web apps with PII or payments",
+      "AI features handling user data"
+    ],
+    "when_not_to_use": [
+      "Internal read-only tools"
+    ],
+    "recommended_steps": [
+      "Pick ASVS level with security",
+      "Map requirements to tests",
+      "Automate where possible",
+      "Track gaps in backlog"
+    ],
+    "expected_evidence": [
+      "ASVS checklist",
+      "Test mapping",
+      "Scan results"
+    ],
+    "useful_metrics": [
+      "ASVS requirement coverage"
+    ],
+    "common_risks": [
+      "Level chosen without stakeholder agreement"
+    ],
+    "practical_example": "Level 2 verification includes session management tests plus LLM output encoding checks."
+  },
+  {
+    "id": "ieee-1012-vv-ai-augmented",
+    "title": "IEEE 1012 — V&V planning for AI-augmented software",
+    "summary": "Plan verification and validation activities with independence, traceability and anomaly resolution suited to AI-assisted components.",
+    "tags": [
+      "standards",
+      "vv",
+      "ieee-1012"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://standards.ieee.org/standard/1012-2016.html",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-ieee-1012"
+    ],
+    "name": "IEEE 1012 — V&V planning for AI-augmented software",
+    "category": "AI governance & standards",
+    "problem_solved": "Ad-hoc testing without V&V plan for safety- or mission-critical software.",
+    "when_to_use": [
+      "Safety-related systems",
+      "Formal V&V contracts"
+    ],
+    "when_not_to_use": [
+      "Low-risk marketing sites"
+    ],
+    "recommended_steps": [
+      "Author V&V plan",
+      "Define independence rules",
+      "Trace tests to requirements",
+      "Record anomaly resolution"
+    ],
+    "expected_evidence": [
+      "V&V plan",
+      "Trace matrix",
+      "Anomaly log"
+    ],
+    "useful_metrics": [
+      "open anomalies",
+      "independence audit pass"
+    ],
+    "common_risks": [
+      "V&V plan not updated after AI scope change"
+    ],
+    "practical_example": "Independent QA reviews AI-generated test oracles before safety-critical release sign-off."
+  },
+  {
+    "id": "etsi-en-303645-iot-qa-baseline",
+    "title": "ETSI EN 303 645 — IoT security QA baseline",
+    "summary": "When QA scope includes consumer IoT, verify baseline provisions: unique passwords, update mechanisms, vulnerability disclosure and data protection.",
+    "tags": [
+      "standards",
+      "iot",
+      "etsi"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.etsi.org/standards",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-etsi-en-303645"
+    ],
+    "name": "ETSI EN 303 645 — IoT security QA baseline",
+    "category": "AI governance & standards",
+    "problem_solved": "IoT firmware and apps ship without baseline security validation.",
+    "when_to_use": [
+      "Consumer IoT hardware/software",
+      "Smart device product lines"
+    ],
+    "when_not_to_use": [
+      "Pure SaaS with no device"
+    ],
+    "recommended_steps": [
+      "Map product to 645 provisions",
+      "Test default credentials",
+      "Validate OTA update flow",
+      "Check vulnerability reporting channel"
+    ],
+    "expected_evidence": [
+      "Provision checklist",
+      "OTA test logs"
+    ],
+    "useful_metrics": [
+      "provision pass rate"
+    ],
+    "common_risks": [
+      "Hardware lab access delays testing"
+    ],
+    "practical_example": "QA verifies factory-default password prohibition and signed firmware update rollback tests."
+  },
+  {
+    "id": "oecd-ai-principles-qa-policy",
+    "title": "OECD AI Principles — QA governance reference",
+    "summary": "Anchor internal QA AI policy on OECD principles: inclusive growth, human rights, transparency, robustness, accountability and explainability.",
+    "tags": [
+      "standards",
+      "governance",
+      "oecd"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.oecd.org/en/topics/sub-issues/ai-principles.html",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-oecd-ai-principles"
+    ],
+    "name": "OECD AI Principles — QA governance reference",
+    "category": "AI governance & standards",
+    "problem_solved": "AI test policy lacks internationally recognized ethical framing.",
+    "when_to_use": [
+      "Drafting AI QA policy",
+      "Executive stakeholder alignment"
+    ],
+    "when_not_to_use": [
+      "Replacing binding regulation like EU AI Act"
+    ],
+    "recommended_steps": [
+      "Map principles to test types",
+      "Publish QA AI policy draft",
+      "Review with legal and product",
+      "Train team on accountable testing"
+    ],
+    "expected_evidence": [
+      "Policy document",
+      "Training attendance"
+    ],
+    "useful_metrics": [
+      "policy exceptions",
+      "principle coverage"
+    ],
+    "common_risks": [
+      "Principles cited without operational tests"
+    ],
+    "practical_example": "Accountability principle requires named owner sign-off on AI eval results before production promotion."
+  }
+]

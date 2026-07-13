@@ -8,10 +8,15 @@ export default function EditionsIndexPage() {
 
   return (
     <AppShell title="Editions" tagline="QA Radar as a monthly newspaper — browse every published edition">
-      <section aria-label="All editions" style={{ display: "grid", gap: "var(--space-4)" }}>
-        {editions.map((e) => (
-          <EditionCard key={e.id} edition={e} isCurrent={e.id === current} />
-        ))}
+      <section className="section">
+        <div className="section-head">
+          <h3>All editions</h3>
+        </div>
+        <div className="preview-grid">
+          {editions.map((e) => (
+            <EditionCard key={e.id} edition={e} isCurrent={e.id === current} />
+          ))}
+        </div>
       </section>
     </AppShell>
   );

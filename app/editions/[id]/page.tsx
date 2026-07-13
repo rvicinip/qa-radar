@@ -10,6 +10,24 @@ import {
   getEcosystem,
 } from "@/lib/data/loader";
 import { EcosystemSection } from "@/components/editions/EcosystemSection";
+import { Badge } from "@/components/ui/Badge";
+import type { TrendState, StandardCategory } from "@/lib/types/content-types";
+
+const STATE_TONE: Record<TrendState, "violet" | "cyan" | "green" | "slate" | "rose"> = {
+  Emerging: "violet",
+  Growing: "cyan",
+  Mature: "green",
+  Declining: "slate",
+  "Hype-risk": "rose",
+};
+
+const CATEGORY_TONE: Record<StandardCategory, "violet" | "cyan" | "green" | "slate"> = {
+  governance: "violet",
+  testing: "cyan",
+  security: "green",
+  accessibility: "slate",
+  "ai-codegen": "violet",
+};
 
 export function generateStaticParams() {
   return getEditions().map((e) => ({ id: e.id }));
@@ -33,25 +51,88 @@ export default async function EditionCoverPage({
 
   return (
     <AppShell title={meta.label} tagline={`QA Radar edition — published ${meta.published}`}>
-      <section aria-label="Month highlights" style={{ display: "grid", gap: "var(--space-4)" }}>
-        <div className="card">
-          <h2>Top trends</h2>
-          <ul>{trends.map((t) => <li key={t.id}>{t.name} — {t.state}</li>)}</ul>
+      <section className="section">
+        <div className="section-head">
+          <h3>Top trends</h3>
         </div>
-        <div className="card">
-          <h2>Top news</h2>
-          <ul>{news.map((n) => <li key={n.id}>{n.title}</li>)}</ul>
+        <div className="preview-grid">
+          {trends.map((t) => (
+            <article key={t.id} className="preview">
+              <h4>{t.name}</h4>
+              <p className="text-[var(--ink-secondary)]" style={{ fontSize: ".84rem" }}>
+                {t.summary}
+              </p>
+              <div className="foot">
+                <Badge tone={STATE_TONE[t.state]}>{t.state}</Badge>
+              </div>
+            </article>
+          ))}
         </div>
-        <div className="card">
-          <h2>Signals</h2>
-          <ul>{signals.map((s) => <li key={s.id}>{s.title}</li>)}</ul>
-        </div>
-        <div className="card">
-          <h2>Standards</h2>
-          <ul>{standards.map((s) => <li key={s.id}>{s.name}</li>)}</ul>
-        </div>
-        <EcosystemSection items={ecosystem} />
       </section>
+
+      <section className="section">
+        <div className="section-head">
+          <h3>Top news</h3>
+        </div>
+        <div className="preview-grid">
+          {news.map((n) => (
+            <article key={n.id} className="preview">
+              <div className="ptype">{n.source_name} · {n.published_at}</div>
+              <h4>{n.title}</h4>
+              <p className="text-[var(--ink-secondary)]" style={{ fontSize: ".84rem" }}>
+                {n.summary}
+              </p>
+              <div className="foot">
+                <Badge tone="blue">{n.impact_category}</Badge>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-head">
+          <h3>Signals</h3>
+        </div>
+        <div className="preview-grid">
+          {signals.map((s) => (
+            <article key={s.id} className="preview">
+              <div className="ptype">{s.source_name}</div>
+              <h4>{s.title}</h4>
+              <p className="text-[var(--ink-secondary)]" style={{ fontSize: ".84rem" }}>
+                {s.summary}
+              </p>
+              <div className="foot">
+                <Badge tone={s.impact === "Critical" ? "rose" : s.impact === "High" ? "amber" : s.impact === "Medium" ? "cyan" : "slate"}>
+                  {s.board_state}
+                </Badge>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-head">
+          <h3>Standards</h3>
+        </div>
+        <div className="preview-grid">
+          {standards.map((s) => (
+            <article key={s.id} className="preview">
+              <div className="ptype">{s.publisher}</div>
+              <h4>{s.name}</h4>
+              <p className="text-[var(--ink-secondary)]" style={{ fontSize: ".84rem" }}>
+                {s.qa_relevance}
+              </p>
+              <div className="foot">
+                <Badge tone={CATEGORY_TONE[s.category]}>{s.category}</Badge>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <EcosystemSection items={ecosystem} />
     </AppShell>
   );
 }

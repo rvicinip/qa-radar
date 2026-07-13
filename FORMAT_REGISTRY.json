@@ -1,0 +1,66 @@
+{
+  "format_lock": {
+    "reference_mock": "/srv/ai-ops/runtime/qa-radar-screen-mock-2026-06-09.html",
+    "token_file": "styles/design-tokens.css",
+    "token_file_sha256": "ab98e45e04fd7a44f7968aee6e69107ba312c765616b2fa13d3c200023cca531",
+    "required_css_variables": [
+      "--color-slate-900",
+      "--color-slate-800",
+      "--color-slate-50",
+      "--color-blue-500",
+      "--color-cyan",
+      "--color-amber",
+      "--color-green",
+      "--color-rose",
+      "--color-violet",
+      "--space-4",
+      "--space-6",
+      "--radius-md",
+      "--radius-lg",
+      "--radius-xl",
+      "--shadow-card",
+      "--shadow-soft",
+      "--bg",
+      "--surface",
+      "--surface-2",
+      "--ink",
+      "--ink-secondary",
+      "--muted",
+      "--line-subtle",
+      "--primary",
+      "--sidebar-w",
+      "--hero-gradient-start",
+      "--hero-gradient-mid",
+      "--hero-gradient-end",
+      "--hero-radial-cyan",
+      "--badge-green-bg",
+      "--badge-cyan-bg",
+      "--badge-amber-bg",
+      "--nav-active-bg"
+    ],
+    "required_components": [
+      {
+        "name": "StandardsPreview",
+        "file": "app/page.tsx",
+        "import": "StandardsPreview"
+      },
+      {
+        "name": "KanbanBoard",
+        "alias": "SignalBoardPreview",
+        "file": "app/page.tsx",
+        "import": "KanbanBoard"
+      },
+      {
+        "name": "AppShell",
+        "file": "app/page.tsx",
+        "import": "AppShell"
+      },
+      {
+        "name": "Sidebar",
+        "alias": "SidebarNav",
+        "file": "components/layout/AppShell.tsx",
+        "import": "Sidebar"
+      }
+    ]
+  }
+}

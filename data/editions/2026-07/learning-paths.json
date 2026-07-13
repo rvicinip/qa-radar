@@ -1,0 +1,249 @@
+[
+  {
+    "id": "playwright-automation-engineer",
+    "title": "Playwright Automation Engineer",
+    "summary": "Path for QA professionals building maintainable Playwright and TypeScript automation.",
+    "tags": [
+      "playwright"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://playwright.dev/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-playwright",
+      "source-ministry-of-testing"
+    ],
+    "objective": "Build maintainable E2E automation with Playwright, TypeScript and CI evidence.",
+    "required_skills": [
+      "TypeScript basics",
+      "Selectors",
+      "CI basics"
+    ],
+    "recommended_resources": [
+      "Playwright docs",
+      "Ministry of Testing"
+    ],
+    "recommended_communities": [
+      "Ministry of Testing"
+    ],
+    "suggested_practices": [
+      "Page models",
+      "Trace review"
+    ],
+    "practical_project": "Automate a critical journey with trace and Allure evidence.",
+    "progress_evidence": [
+      "GitHub repo",
+      "CI run",
+      "Allure report"
+    ]
+  },
+  {
+    "id": "accessibility-qa-specialist",
+    "title": "Accessibility QA Specialist",
+    "summary": "Learn WCAG-based testing combining automated axe checks and manual keyboard review.",
+    "tags": [
+      "accessibility"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://www.w3.org/WAI/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-wcag-22",
+      "source-webaim",
+      "source-axe-core"
+    ],
+    "objective": "Execute WCAG 2.2 smoke and exploratory accessibility reviews.",
+    "required_skills": [
+      "HTML basics",
+      "Keyboard navigation"
+    ],
+    "recommended_resources": [
+      "WCAG 2.2",
+      "WebAIM articles",
+      "axe-core docs"
+    ],
+    "recommended_communities": [
+      "WebAIM"
+    ],
+    "suggested_practices": [
+      "Accessibility smoke gate"
+    ],
+    "practical_project": "Audit five critical pages with axe + keyboard notes.",
+    "progress_evidence": [
+      "Checklist",
+      "Bug tickets",
+      "axe reports"
+    ]
+  },
+  {
+    "id": "api-contract-tester",
+    "title": "API and Contract Tester",
+    "summary": "Master API functional tests and consumer-driven contracts for microservices.",
+    "tags": [
+      "api",
+      "contract"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://docs.pact.io/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-postman",
+      "source-pact"
+    ],
+    "objective": "Validate APIs with Postman and introduce Pact contracts in CI.",
+    "required_skills": [
+      "HTTP",
+      "JSON",
+      "OpenAPI basics"
+    ],
+    "recommended_resources": [
+      "Postman learning center",
+      "Pact docs"
+    ],
+    "recommended_communities": [
+      "Pact community"
+    ],
+    "suggested_practices": [
+      "Schema validation",
+      "Contract CI gate"
+    ],
+    "practical_project": "One Postman collection in CI plus one Pact consumer test.",
+    "progress_evidence": [
+      "CI logs",
+      "Contract publish record"
+    ]
+  },
+  {
+    "id": "performance-testing-fundamentals",
+    "title": "Performance Testing Fundamentals",
+    "summary": "Introduce load testing with k6 thresholds tied to SLOs.",
+    "tags": [
+      "performance"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://grafana.com/docs/k6/latest/",
+    "source_type": "documentation",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-k6"
+    ],
+    "objective": "Run k6 load tests with pass/fail thresholds in staging.",
+    "required_skills": [
+      "HTTP",
+      "Basic scripting"
+    ],
+    "recommended_resources": [
+      "k6 documentation"
+    ],
+    "recommended_communities": [
+      "Grafana community"
+    ],
+    "suggested_practices": [
+      "SLO thresholds"
+    ],
+    "practical_project": "Load test top API with p95 latency threshold.",
+    "progress_evidence": [
+      "k6 HTML report",
+      "Threshold pass log"
+    ]
+  },
+  {
+    "id": "security-testing-for-qa",
+    "title": "Security Testing for QA",
+    "summary": "Coordinate with security using OWASP WSTG and ZAP baseline scans.",
+    "tags": [
+      "security"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_type": "standard",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-owasp-wstg",
+      "source-owasp-zap"
+    ],
+    "objective": "Run scoped security smoke aligned to OWASP WSTG with ZAP triage.",
+    "required_skills": [
+      "Web apps basics",
+      "Auth flows"
+    ],
+    "recommended_resources": [
+      "OWASP WSTG",
+      "OWASP ZAP docs"
+    ],
+    "recommended_communities": [
+      "OWASP"
+    ],
+    "suggested_practices": [
+      "Security smoke WSTG"
+    ],
+    "practical_project": "Weekly ZAP baseline on staging with triage notes.",
+    "progress_evidence": [
+      "ZAP report",
+      "Triage spreadsheet"
+    ]
+  },
+  {
+    "id": "quality-engineering-lead",
+    "title": "Quality Engineering Lead",
+    "summary": "Develop leadership skills linking DORA metrics, culture and test strategy.",
+    "tags": [
+      "leadership"
+    ],
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09",
+    "reviewed_at": "2026-06-09",
+    "source_url": "https://dora.dev/",
+    "source_type": "official",
+    "confidence_level": "Verified",
+    "status": "active",
+    "reviewer_notes": "",
+    "source_ids": [
+      "source-dora",
+      "source-ministry-of-testing"
+    ],
+    "objective": "Align QA strategy with delivery metrics and coaching practices.",
+    "required_skills": [
+      "Test strategy",
+      "Stakeholder communication"
+    ],
+    "recommended_resources": [
+      "DORA reports",
+      "MoT leadership content"
+    ],
+    "recommended_communities": [
+      "Ministry of Testing"
+    ],
+    "suggested_practices": [
+      "Evidence-based release gate"
+    ],
+    "practical_project": "Quarterly quality report with flake rate and CFR trends.",
+    "progress_evidence": [
+      "Dashboard",
+      "Retrospective notes"
+    ]
+  }
+]

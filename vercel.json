@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run validate:data && npm run validate:salience && npm run validate:format && npm run build",
+  "installCommand": "npm install"
+}
