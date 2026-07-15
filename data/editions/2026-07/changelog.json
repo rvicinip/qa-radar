@@ -67,10 +67,14 @@
     "changed_by": "Reinaldo / AI assistant",
     "change_type": "created",
     "item_id": "format-lock",
-    "tags": ["format-lock"],
+    "tags": [
+      "format-lock"
+    ],
     "summary": "Format lock: extracted design-tokens.css from screen mock, FORMAT_REGISTRY.json, validate:format script, release chain enforcement.",
     "reason": "User rule: visual format must not drift between enrich runs, seed updates, or deploys.",
-    "source_ids": ["source-ministry-of-testing"],
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
     "review_status": "reviewed"
   },
   {
@@ -81,7 +85,10 @@
     "item_id": "qa-radar-edition-2026-07",
     "summary": "Opened the July 2026 edition (cloned June) and curated trends, news and tools for the month.",
     "reason": "Monthly QA Radar newspaper: a fresh dated edition with navigable evolution vs. June.",
-    "source_ids": ["source-playwright", "source-ministry-of-testing"],
+    "source_ids": [
+      "source-playwright",
+      "source-ministry-of-testing"
+    ],
     "review_status": "reviewed"
   },
   {
@@ -92,7 +99,22 @@
     "item_id": "qa-radar-edition-2026-07",
     "summary": "Enriched July 2026 edition with content from ThoughtWorks Technology Radar Vol 34: 5 new trends, 5 news items, 4 tools, 4 signals, 3 ecosystem recs. Promoted 3 existing ecosystem items.",
     "reason": "Technology Radar Vol 34 (April 2026) released with strong QA/agentic focus — agent skills, structured output, mutation testing, browser CT, feedback sensors.",
-    "source_ids": ["source-ministry-of-testing"],
+    "source_ids": [
+      "source-ministry-of-testing"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "change-2026-07-15-istqb-learning-path",
+    "date": "2026-07-15",
+    "changed_by": "Reinaldo / AI assistant",
+    "change_type": "created",
+    "item_id": "istqb-advanced-level",
+    "summary": "Added ISTQB Advanced Level certification learning path, connecting exam syllabus to QA Radar standards (ISO 29119, ISO 25059) and practices.",
+    "reason": "User goal: obtain ISTQB Advanced Level certification by October 2026. Radar now supports study preparation with standards cross-references.",
+    "source_ids": [
+      "source-istqb"
+    ],
     "review_status": "reviewed"
   }
 ]
